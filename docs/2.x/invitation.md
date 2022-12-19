@@ -61,8 +61,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `user_display_name` (`string`): The display name of the user being invited When `null`, the `user_display_name` field will be omitted from the resulting object.
   - `user_email_address` (`string`): The email address of the user being invited
   - `user_type` (`string`): The user type of the user being invited When `null`, the `user_type` field will be omitted from the resulting object.
-  - `message` (`list[obj]`): Customize the message sent to the invited user When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.invitation.message.new](#fn-invitationmessagenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.invitation.timeouts.new](#fn-invitationtimeoutsnew) constructor.
+  - `message` (`list[obj]`): Customize the message sent to the invited user When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.invitation.message.new](#fn-messagenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.invitation.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,7 +78,7 @@ newAttrs()
 `azuread.invitation.newAttrs` constructs a new object with attributes and blocks configured for the `invitation`
 Terraform resource.
 
-Unlike [azuread.invitation.new](#fn-invitationnew), this function will not inject the `resource`
+Unlike [azuread.invitation.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -90,8 +90,8 @@ injecting into a complete block.
   - `user_display_name` (`string`): The display name of the user being invited When `null`, the `user_display_name` field will be omitted from the resulting object.
   - `user_email_address` (`string`): The email address of the user being invited
   - `user_type` (`string`): The user type of the user being invited When `null`, the `user_type` field will be omitted from the resulting object.
-  - `message` (`list[obj]`): Customize the message sent to the invited user When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.invitation.message.new](#fn-invitationmessagenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.invitation.timeouts.new](#fn-invitationtimeoutsnew) constructor.
+  - `message` (`list[obj]`): Customize the message sent to the invited user When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.invitation.message.new](#fn-messagenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.invitation.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `invitation` resource into the root Terraform configuration.

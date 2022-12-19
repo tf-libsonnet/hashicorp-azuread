@@ -77,10 +77,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `display_name` (`string`): 
   - `state` (`string`): 
-  - `conditions` (`list[obj]`):  When `null`, the `conditions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.new](#fn-conditional_access_policyconditionsnew) constructor.
-  - `grant_controls` (`list[obj]`):  When `null`, the `grant_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.grant_controls.new](#fn-conditional_access_policygrant_controlsnew) constructor.
-  - `session_controls` (`list[obj]`):  When `null`, the `session_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.session_controls.new](#fn-conditional_access_policysession_controlsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.timeouts.new](#fn-conditional_access_policytimeoutsnew) constructor.
+  - `conditions` (`list[obj]`):  When `null`, the `conditions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.new](#fn-conditionsnew) constructor.
+  - `grant_controls` (`list[obj]`):  When `null`, the `grant_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.grant_controls.new](#fn-grant_controlsnew) constructor.
+  - `session_controls` (`list[obj]`):  When `null`, the `session_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.session_controls.new](#fn-session_controlsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,7 +96,7 @@ newAttrs()
 `azuread.conditional_access_policy.newAttrs` constructs a new object with attributes and blocks configured for the `conditional_access_policy`
 Terraform resource.
 
-Unlike [azuread.conditional_access_policy.new](#fn-conditional_access_policynew), this function will not inject the `resource`
+Unlike [azuread.conditional_access_policy.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -106,10 +106,10 @@ injecting into a complete block.
 **Args**:
   - `display_name` (`string`): 
   - `state` (`string`): 
-  - `conditions` (`list[obj]`):  When `null`, the `conditions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.new](#fn-conditional_access_policyconditionsnew) constructor.
-  - `grant_controls` (`list[obj]`):  When `null`, the `grant_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.grant_controls.new](#fn-conditional_access_policygrant_controlsnew) constructor.
-  - `session_controls` (`list[obj]`):  When `null`, the `session_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.session_controls.new](#fn-conditional_access_policysession_controlsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.timeouts.new](#fn-conditional_access_policytimeoutsnew) constructor.
+  - `conditions` (`list[obj]`):  When `null`, the `conditions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.new](#fn-conditionsnew) constructor.
+  - `grant_controls` (`list[obj]`):  When `null`, the `grant_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.grant_controls.new](#fn-grant_controlsnew) constructor.
+  - `session_controls` (`list[obj]`):  When `null`, the `session_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.session_controls.new](#fn-session_controlsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `conditional_access_policy` resource into the root Terraform configuration.
@@ -314,11 +314,11 @@ Terraform sub block.
   - `client_app_types` (`list`): 
   - `sign_in_risk_levels` (`list`):  When `null`, the `sign_in_risk_levels` field will be omitted from the resulting object.
   - `user_risk_levels` (`list`):  When `null`, the `user_risk_levels` field will be omitted from the resulting object.
-  - `applications` (`list[obj]`):  When `null`, the `applications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.applications.new](#fn-conditionsapplicationsnew) constructor.
-  - `devices` (`list[obj]`):  When `null`, the `devices` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.devices.new](#fn-conditionsdevicesnew) constructor.
-  - `locations` (`list[obj]`):  When `null`, the `locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.locations.new](#fn-conditionslocationsnew) constructor.
-  - `platforms` (`list[obj]`):  When `null`, the `platforms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.platforms.new](#fn-conditionsplatformsnew) constructor.
-  - `users` (`list[obj]`):  When `null`, the `users` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.new](#fn-conditionsusersnew) constructor.
+  - `applications` (`list[obj]`):  When `null`, the `applications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.applications.new](#fn-applicationsnew) constructor.
+  - `devices` (`list[obj]`):  When `null`, the `devices` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.devices.new](#fn-devicesnew) constructor.
+  - `locations` (`list[obj]`):  When `null`, the `locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.locations.new](#fn-locationsnew) constructor.
+  - `platforms` (`list[obj]`):  When `null`, the `platforms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.platforms.new](#fn-platformsnew) constructor.
+  - `users` (`list[obj]`):  When `null`, the `users` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.new](#fn-usersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `conditions` sub block.
@@ -366,7 +366,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.devices.filter.new](#fn-devicesfilternew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.devices.filter.new](#fn-conditionsfilternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `devices` sub block.

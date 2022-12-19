@@ -55,8 +55,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `service_principal_id` (`string`): The object ID of the service principal for which this synchronization secret should be created
-  - `credential` (`list[obj]`):  When `null`, the `credential` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.synchronization_secret.credential.new](#fn-synchronization_secretcredentialnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.synchronization_secret.timeouts.new](#fn-synchronization_secrettimeoutsnew) constructor.
+  - `credential` (`list[obj]`):  When `null`, the `credential` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.synchronization_secret.credential.new](#fn-credentialnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.synchronization_secret.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,7 +72,7 @@ newAttrs()
 `azuread.synchronization_secret.newAttrs` constructs a new object with attributes and blocks configured for the `synchronization_secret`
 Terraform resource.
 
-Unlike [azuread.synchronization_secret.new](#fn-synchronization_secretnew), this function will not inject the `resource`
+Unlike [azuread.synchronization_secret.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -81,8 +81,8 @@ injecting into a complete block.
 
 **Args**:
   - `service_principal_id` (`string`): The object ID of the service principal for which this synchronization secret should be created
-  - `credential` (`list[obj]`):  When `null`, the `credential` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.synchronization_secret.credential.new](#fn-synchronization_secretcredentialnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.synchronization_secret.timeouts.new](#fn-synchronization_secrettimeoutsnew) constructor.
+  - `credential` (`list[obj]`):  When `null`, the `credential` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.synchronization_secret.credential.new](#fn-credentialnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.synchronization_secret.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `synchronization_secret` resource into the root Terraform configuration.

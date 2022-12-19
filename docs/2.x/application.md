@@ -125,15 +125,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`list`): A set of tags to apply to the application When `null`, the `tags` field will be omitted from the resulting object.
   - `template_id` (`string`): Unique ID of the application template from which this application is created When `null`, the `template_id` field will be omitted from the resulting object.
   - `terms_of_service_url` (`string`): URL of the application&#39;s terms of service statement When `null`, the `terms_of_service_url` field will be omitted from the resulting object.
-  - `api` (`list[obj]`):  When `null`, the `api` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.api.new](#fn-applicationapinew) constructor.
-  - `app_role` (`list[obj]`):  When `null`, the `app_role` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.app_role.new](#fn-applicationapp_rolenew) constructor.
-  - `feature_tags` (`list[obj]`): Block of features to configure for this application using tags When `null`, the `feature_tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.feature_tags.new](#fn-applicationfeature_tagsnew) constructor.
-  - `optional_claims` (`list[obj]`):  When `null`, the `optional_claims` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.new](#fn-applicationoptional_claimsnew) constructor.
-  - `public_client` (`list[obj]`):  When `null`, the `public_client` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.public_client.new](#fn-applicationpublic_clientnew) constructor.
-  - `required_resource_access` (`list[obj]`):  When `null`, the `required_resource_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.required_resource_access.new](#fn-applicationrequired_resource_accessnew) constructor.
-  - `single_page_application` (`list[obj]`):  When `null`, the `single_page_application` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.single_page_application.new](#fn-applicationsingle_page_applicationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.timeouts.new](#fn-applicationtimeoutsnew) constructor.
-  - `web` (`list[obj]`):  When `null`, the `web` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.web.new](#fn-applicationwebnew) constructor.
+  - `api` (`list[obj]`):  When `null`, the `api` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.api.new](#fn-apinew) constructor.
+  - `app_role` (`list[obj]`):  When `null`, the `app_role` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.app_role.new](#fn-app_rolenew) constructor.
+  - `feature_tags` (`list[obj]`): Block of features to configure for this application using tags When `null`, the `feature_tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.feature_tags.new](#fn-feature_tagsnew) constructor.
+  - `optional_claims` (`list[obj]`):  When `null`, the `optional_claims` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.new](#fn-optional_claimsnew) constructor.
+  - `public_client` (`list[obj]`):  When `null`, the `public_client` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.public_client.new](#fn-public_clientnew) constructor.
+  - `required_resource_access` (`list[obj]`):  When `null`, the `required_resource_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.required_resource_access.new](#fn-required_resource_accessnew) constructor.
+  - `single_page_application` (`list[obj]`):  When `null`, the `single_page_application` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.single_page_application.new](#fn-single_page_applicationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.timeouts.new](#fn-timeoutsnew) constructor.
+  - `web` (`list[obj]`):  When `null`, the `web` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.web.new](#fn-webnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -149,7 +149,7 @@ newAttrs()
 `azuread.application.newAttrs` constructs a new object with attributes and blocks configured for the `application`
 Terraform resource.
 
-Unlike [azuread.application.new](#fn-applicationnew), this function will not inject the `resource`
+Unlike [azuread.application.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -173,15 +173,15 @@ injecting into a complete block.
   - `tags` (`list`): A set of tags to apply to the application When `null`, the `tags` field will be omitted from the resulting object.
   - `template_id` (`string`): Unique ID of the application template from which this application is created When `null`, the `template_id` field will be omitted from the resulting object.
   - `terms_of_service_url` (`string`): URL of the application&#39;s terms of service statement When `null`, the `terms_of_service_url` field will be omitted from the resulting object.
-  - `api` (`list[obj]`):  When `null`, the `api` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.api.new](#fn-applicationapinew) constructor.
-  - `app_role` (`list[obj]`):  When `null`, the `app_role` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.app_role.new](#fn-applicationapp_rolenew) constructor.
-  - `feature_tags` (`list[obj]`): Block of features to configure for this application using tags When `null`, the `feature_tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.feature_tags.new](#fn-applicationfeature_tagsnew) constructor.
-  - `optional_claims` (`list[obj]`):  When `null`, the `optional_claims` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.new](#fn-applicationoptional_claimsnew) constructor.
-  - `public_client` (`list[obj]`):  When `null`, the `public_client` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.public_client.new](#fn-applicationpublic_clientnew) constructor.
-  - `required_resource_access` (`list[obj]`):  When `null`, the `required_resource_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.required_resource_access.new](#fn-applicationrequired_resource_accessnew) constructor.
-  - `single_page_application` (`list[obj]`):  When `null`, the `single_page_application` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.single_page_application.new](#fn-applicationsingle_page_applicationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.timeouts.new](#fn-applicationtimeoutsnew) constructor.
-  - `web` (`list[obj]`):  When `null`, the `web` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.web.new](#fn-applicationwebnew) constructor.
+  - `api` (`list[obj]`):  When `null`, the `api` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.api.new](#fn-apinew) constructor.
+  - `app_role` (`list[obj]`):  When `null`, the `app_role` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.app_role.new](#fn-app_rolenew) constructor.
+  - `feature_tags` (`list[obj]`): Block of features to configure for this application using tags When `null`, the `feature_tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.feature_tags.new](#fn-feature_tagsnew) constructor.
+  - `optional_claims` (`list[obj]`):  When `null`, the `optional_claims` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.new](#fn-optional_claimsnew) constructor.
+  - `public_client` (`list[obj]`):  When `null`, the `public_client` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.public_client.new](#fn-public_clientnew) constructor.
+  - `required_resource_access` (`list[obj]`):  When `null`, the `required_resource_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.required_resource_access.new](#fn-required_resource_accessnew) constructor.
+  - `single_page_application` (`list[obj]`):  When `null`, the `single_page_application` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.single_page_application.new](#fn-single_page_applicationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.timeouts.new](#fn-timeoutsnew) constructor.
+  - `web` (`list[obj]`):  When `null`, the `web` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.web.new](#fn-webnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `application` resource into the root Terraform configuration.
@@ -795,7 +795,7 @@ Terraform sub block.
   - `known_client_applications` (`list`): Used for bundling consent if you have a solution that contains two parts: a client app and a custom web API app When `null`, the `known_client_applications` field will be omitted from the resulting object.
   - `mapped_claims_enabled` (`bool`): Allows an application to use claims mapping without specifying a custom signing key When `null`, the `mapped_claims_enabled` field will be omitted from the resulting object.
   - `requested_access_token_version` (`number`): The access token version expected by this resource When `null`, the `requested_access_token_version` field will be omitted from the resulting object.
-  - `oauth2_permission_scope` (`list[obj]`): One or more `oauth2_permission_scope` blocks to describe delegated permissions exposed by the web API represented by this application When `null`, the `oauth2_permission_scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.api.oauth2_permission_scope.new](#fn-apioauth2_permission_scopenew) constructor.
+  - `oauth2_permission_scope` (`list[obj]`): One or more `oauth2_permission_scope` blocks to describe delegated permissions exposed by the web API represented by this application When `null`, the `oauth2_permission_scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.api.oauth2_permission_scope.new](#fn-oauth2_permission_scopenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `api` sub block.
@@ -900,9 +900,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `access_token` (`list[obj]`):  When `null`, the `access_token` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.access_token.new](#fn-optional_claimsaccess_tokennew) constructor.
-  - `id_token` (`list[obj]`):  When `null`, the `id_token` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.id_token.new](#fn-optional_claimsid_tokennew) constructor.
-  - `saml2_token` (`list[obj]`):  When `null`, the `saml2_token` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.saml2_token.new](#fn-optional_claimssaml2_tokennew) constructor.
+  - `access_token` (`list[obj]`):  When `null`, the `access_token` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.access_token.new](#fn-access_tokennew) constructor.
+  - `id_token` (`list[obj]`):  When `null`, the `id_token` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.id_token.new](#fn-id_tokennew) constructor.
+  - `saml2_token` (`list[obj]`):  When `null`, the `saml2_token` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.saml2_token.new](#fn-saml2_tokennew) constructor.
 
 **Returns**:
   - An attribute object that represents the `optional_claims` sub block.
@@ -1027,7 +1027,7 @@ Terraform sub block.
 
 **Args**:
   - `resource_app_id` (`string`): 
-  - `resource_access` (`list[obj]`):  When `null`, the `resource_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.required_resource_access.resource_access.new](#fn-required_resource_accessresource_accessnew) constructor.
+  - `resource_access` (`list[obj]`):  When `null`, the `resource_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.required_resource_access.resource_access.new](#fn-resource_accessnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `required_resource_access` sub block.
@@ -1125,7 +1125,7 @@ Terraform sub block.
   - `homepage_url` (`string`): Home page or landing page of the application When `null`, the `homepage_url` field will be omitted from the resulting object.
   - `logout_url` (`string`): The URL that will be used by Microsoft&#39;s authorization service to sign out a user using front-channel, back-channel or SAML logout protocols When `null`, the `logout_url` field will be omitted from the resulting object.
   - `redirect_uris` (`list`): The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent When `null`, the `redirect_uris` field will be omitted from the resulting object.
-  - `implicit_grant` (`list[obj]`):  When `null`, the `implicit_grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.web.implicit_grant.new](#fn-webimplicit_grantnew) constructor.
+  - `implicit_grant` (`list[obj]`):  When `null`, the `implicit_grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.web.implicit_grant.new](#fn-implicit_grantnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `web` sub block.

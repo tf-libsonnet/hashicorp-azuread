@@ -61,7 +61,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `display_name` (`string`): A unique display name for the federated identity credential
   - `issuer` (`string`): The URL of the external identity provider, which must match the issuer claim of the external token being exchanged. The combination of the values of issuer and subject must be unique on the app.
   - `subject` (`string`): The identifier of the external software workload within the external identity provider. The combination of issuer and subject must be unique on the app.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_federated_identity_credential.timeouts.new](#fn-application_federated_identity_credentialtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_federated_identity_credential.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,7 +77,7 @@ newAttrs()
 `azuread.application_federated_identity_credential.newAttrs` constructs a new object with attributes and blocks configured for the `application_federated_identity_credential`
 Terraform resource.
 
-Unlike [azuread.application_federated_identity_credential.new](#fn-application_federated_identity_credentialnew), this function will not inject the `resource`
+Unlike [azuread.application_federated_identity_credential.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -91,7 +91,7 @@ injecting into a complete block.
   - `display_name` (`string`): A unique display name for the federated identity credential
   - `issuer` (`string`): The URL of the external identity provider, which must match the issuer claim of the external token being exchanged. The combination of the values of issuer and subject must be unique on the app.
   - `subject` (`string`): The identifier of the external software workload within the external identity provider. The combination of issuer and subject must be unique on the app.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_federated_identity_credential.timeouts.new](#fn-application_federated_identity_credentialtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_federated_identity_credential.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `application_federated_identity_credential` resource into the root Terraform configuration.

@@ -64,7 +64,7 @@ newAttrs()
 `azuread.service_principal_claims_mapping_policy_assignment.newAttrs` constructs a new object with attributes and blocks configured for the `service_principal_claims_mapping_policy_assignment`
 Terraform resource.
 
-Unlike [azuread.service_principal_claims_mapping_policy_assignment.new](#fn-service_principal_claims_mapping_policy_assignmentnew), this function will not inject the `resource`
+Unlike [azuread.service_principal_claims_mapping_policy_assignment.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

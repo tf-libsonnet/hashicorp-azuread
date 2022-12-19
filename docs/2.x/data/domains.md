@@ -61,7 +61,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `only_initial` (`bool`): Set to `true` to only return the initial domain, which is your primary Azure Active Directory tenant domain When `null`, the `only_initial` field will be omitted from the resulting object.
   - `only_root` (`bool`): Set to `true` to only return verified root domains. Excludes subdomains and unverified domains When `null`, the `only_root` field will be omitted from the resulting object.
   - `supports_services` (`list`): A list of supported services that must be supported by a domain When `null`, the `supports_services` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.domains.timeouts.new](#fn-domainstimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.domains.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -77,7 +77,7 @@ newAttrs()
 `azuread.data.domains.newAttrs` constructs a new object with attributes and blocks configured for the `domains`
 Terraform data source.
 
-Unlike [azuread.data.domains.new](#fn-domainsnew), this function will not inject the `data source`
+Unlike [azuread.data.domains.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -91,7 +91,7 @@ injecting into a complete block.
   - `only_initial` (`bool`): Set to `true` to only return the initial domain, which is your primary Azure Active Directory tenant domain When `null`, the `only_initial` field will be omitted from the resulting object.
   - `only_root` (`bool`): Set to `true` to only return verified root domains. Excludes subdomains and unverified domains When `null`, the `only_root` field will be omitted from the resulting object.
   - `supports_services` (`list`): A list of supported services that must be supported by a domain When `null`, the `supports_services` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.domains.timeouts.new](#fn-domainstimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.domains.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `domains` data source into the root Terraform configuration.
