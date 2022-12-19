@@ -75,12 +75,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `display_name` (`string`): 
-  - `state` (`string`): 
-  - `conditions` (`list[obj]`):  When `null`, the `conditions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.new](#fn-conditionsnew) constructor.
-  - `grant_controls` (`list[obj]`):  When `null`, the `grant_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.grant_controls.new](#fn-grant_controlsnew) constructor.
-  - `session_controls` (`list[obj]`):  When `null`, the `session_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.session_controls.new](#fn-session_controlsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.timeouts.new](#fn-timeoutsnew) constructor.
+  - `display_name` (`string`): Set the `display_name` field on the resulting resource block.
+  - `state` (`string`): Set the `state` field on the resulting resource block.
+  - `conditions` (`list[obj]`): Set the `conditions` field on the resulting resource block. When `null`, the `conditions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.new](#fn-conditionsnew) constructor.
+  - `grant_controls` (`list[obj]`): Set the `grant_controls` field on the resulting resource block. When `null`, the `grant_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.grant_controls.new](#fn-grant_controlsnew) constructor.
+  - `session_controls` (`list[obj]`): Set the `session_controls` field on the resulting resource block. When `null`, the `session_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.session_controls.new](#fn-session_controlsnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -104,12 +104,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `display_name` (`string`): 
-  - `state` (`string`): 
-  - `conditions` (`list[obj]`):  When `null`, the `conditions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.new](#fn-conditionsnew) constructor.
-  - `grant_controls` (`list[obj]`):  When `null`, the `grant_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.grant_controls.new](#fn-grant_controlsnew) constructor.
-  - `session_controls` (`list[obj]`):  When `null`, the `session_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.session_controls.new](#fn-session_controlsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.timeouts.new](#fn-timeoutsnew) constructor.
+  - `display_name` (`string`): Set the `display_name` field on the resulting object.
+  - `state` (`string`): Set the `state` field on the resulting object.
+  - `conditions` (`list[obj]`): Set the `conditions` field on the resulting object. When `null`, the `conditions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.new](#fn-conditionsnew) constructor.
+  - `grant_controls` (`list[obj]`): Set the `grant_controls` field on the resulting object. When `null`, the `grant_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.grant_controls.new](#fn-grant_controlsnew) constructor.
+  - `session_controls` (`list[obj]`): Set the `session_controls` field on the resulting object. When `null`, the `session_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.session_controls.new](#fn-session_controlsnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `conditional_access_policy` resource into the root Terraform configuration.
@@ -311,14 +311,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_app_types` (`list`): 
-  - `sign_in_risk_levels` (`list`):  When `null`, the `sign_in_risk_levels` field will be omitted from the resulting object.
-  - `user_risk_levels` (`list`):  When `null`, the `user_risk_levels` field will be omitted from the resulting object.
-  - `applications` (`list[obj]`):  When `null`, the `applications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.applications.new](#fn-conditionsapplicationsnew) constructor.
-  - `devices` (`list[obj]`):  When `null`, the `devices` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.devices.new](#fn-conditionsdevicesnew) constructor.
-  - `locations` (`list[obj]`):  When `null`, the `locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.locations.new](#fn-conditionslocationsnew) constructor.
-  - `platforms` (`list[obj]`):  When `null`, the `platforms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.platforms.new](#fn-conditionsplatformsnew) constructor.
-  - `users` (`list[obj]`):  When `null`, the `users` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.new](#fn-conditionsusersnew) constructor.
+  - `client_app_types` (`list`): Set the `client_app_types` field on the resulting object.
+  - `sign_in_risk_levels` (`list`): Set the `sign_in_risk_levels` field on the resulting object. When `null`, the `sign_in_risk_levels` field will be omitted from the resulting object.
+  - `user_risk_levels` (`list`): Set the `user_risk_levels` field on the resulting object. When `null`, the `user_risk_levels` field will be omitted from the resulting object.
+  - `applications` (`list[obj]`): Set the `applications` field on the resulting object. When `null`, the `applications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.applications.new](#fn-conditionsapplicationsnew) constructor.
+  - `devices` (`list[obj]`): Set the `devices` field on the resulting object. When `null`, the `devices` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.devices.new](#fn-conditionsdevicesnew) constructor.
+  - `locations` (`list[obj]`): Set the `locations` field on the resulting object. When `null`, the `locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.locations.new](#fn-conditionslocationsnew) constructor.
+  - `platforms` (`list[obj]`): Set the `platforms` field on the resulting object. When `null`, the `platforms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.platforms.new](#fn-conditionsplatformsnew) constructor.
+  - `users` (`list[obj]`): Set the `users` field on the resulting object. When `null`, the `users` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.new](#fn-conditionsusersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `conditions` sub block.
@@ -341,9 +341,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `excluded_applications` (`list`):  When `null`, the `excluded_applications` field will be omitted from the resulting object.
-  - `included_applications` (`list`):  When `null`, the `included_applications` field will be omitted from the resulting object.
-  - `included_user_actions` (`list`):  When `null`, the `included_user_actions` field will be omitted from the resulting object.
+  - `excluded_applications` (`list`): Set the `excluded_applications` field on the resulting object. When `null`, the `excluded_applications` field will be omitted from the resulting object.
+  - `included_applications` (`list`): Set the `included_applications` field on the resulting object. When `null`, the `included_applications` field will be omitted from the resulting object.
+  - `included_user_actions` (`list`): Set the `included_user_actions` field on the resulting object. When `null`, the `included_user_actions` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `applications` sub block.
@@ -366,7 +366,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.devices.filter.new](#fn-conditionsconditionsfilternew) constructor.
+  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.devices.filter.new](#fn-conditionsconditionsfilternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `devices` sub block.
@@ -389,8 +389,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `mode` (`string`): 
-  - `rule` (`string`): 
+  - `mode` (`string`): Set the `mode` field on the resulting object.
+  - `rule` (`string`): Set the `rule` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.
@@ -413,8 +413,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `excluded_locations` (`list`):  When `null`, the `excluded_locations` field will be omitted from the resulting object.
-  - `included_locations` (`list`): 
+  - `excluded_locations` (`list`): Set the `excluded_locations` field on the resulting object. When `null`, the `excluded_locations` field will be omitted from the resulting object.
+  - `included_locations` (`list`): Set the `included_locations` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `locations` sub block.
@@ -437,8 +437,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `excluded_platforms` (`list`):  When `null`, the `excluded_platforms` field will be omitted from the resulting object.
-  - `included_platforms` (`list`): 
+  - `excluded_platforms` (`list`): Set the `excluded_platforms` field on the resulting object. When `null`, the `excluded_platforms` field will be omitted from the resulting object.
+  - `included_platforms` (`list`): Set the `included_platforms` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `platforms` sub block.
@@ -461,12 +461,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `excluded_groups` (`list`):  When `null`, the `excluded_groups` field will be omitted from the resulting object.
-  - `excluded_roles` (`list`):  When `null`, the `excluded_roles` field will be omitted from the resulting object.
-  - `excluded_users` (`list`):  When `null`, the `excluded_users` field will be omitted from the resulting object.
-  - `included_groups` (`list`):  When `null`, the `included_groups` field will be omitted from the resulting object.
-  - `included_roles` (`list`):  When `null`, the `included_roles` field will be omitted from the resulting object.
-  - `included_users` (`list`):  When `null`, the `included_users` field will be omitted from the resulting object.
+  - `excluded_groups` (`list`): Set the `excluded_groups` field on the resulting object. When `null`, the `excluded_groups` field will be omitted from the resulting object.
+  - `excluded_roles` (`list`): Set the `excluded_roles` field on the resulting object. When `null`, the `excluded_roles` field will be omitted from the resulting object.
+  - `excluded_users` (`list`): Set the `excluded_users` field on the resulting object. When `null`, the `excluded_users` field will be omitted from the resulting object.
+  - `included_groups` (`list`): Set the `included_groups` field on the resulting object. When `null`, the `included_groups` field will be omitted from the resulting object.
+  - `included_roles` (`list`): Set the `included_roles` field on the resulting object. When `null`, the `included_roles` field will be omitted from the resulting object.
+  - `included_users` (`list`): Set the `included_users` field on the resulting object. When `null`, the `included_users` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `users` sub block.
@@ -489,10 +489,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `built_in_controls` (`list`): 
-  - `custom_authentication_factors` (`list`):  When `null`, the `custom_authentication_factors` field will be omitted from the resulting object.
-  - `operator` (`string`): 
-  - `terms_of_use` (`list`):  When `null`, the `terms_of_use` field will be omitted from the resulting object.
+  - `built_in_controls` (`list`): Set the `built_in_controls` field on the resulting object.
+  - `custom_authentication_factors` (`list`): Set the `custom_authentication_factors` field on the resulting object. When `null`, the `custom_authentication_factors` field will be omitted from the resulting object.
+  - `operator` (`string`): Set the `operator` field on the resulting object.
+  - `terms_of_use` (`list`): Set the `terms_of_use` field on the resulting object. When `null`, the `terms_of_use` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `grant_controls` sub block.
@@ -515,11 +515,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `application_enforced_restrictions_enabled` (`bool`):  When `null`, the `application_enforced_restrictions_enabled` field will be omitted from the resulting object.
-  - `cloud_app_security_policy` (`string`):  When `null`, the `cloud_app_security_policy` field will be omitted from the resulting object.
-  - `persistent_browser_mode` (`string`):  When `null`, the `persistent_browser_mode` field will be omitted from the resulting object.
-  - `sign_in_frequency` (`number`):  When `null`, the `sign_in_frequency` field will be omitted from the resulting object.
-  - `sign_in_frequency_period` (`string`):  When `null`, the `sign_in_frequency_period` field will be omitted from the resulting object.
+  - `application_enforced_restrictions_enabled` (`bool`): Set the `application_enforced_restrictions_enabled` field on the resulting object. When `null`, the `application_enforced_restrictions_enabled` field will be omitted from the resulting object.
+  - `cloud_app_security_policy` (`string`): Set the `cloud_app_security_policy` field on the resulting object. When `null`, the `cloud_app_security_policy` field will be omitted from the resulting object.
+  - `persistent_browser_mode` (`string`): Set the `persistent_browser_mode` field on the resulting object. When `null`, the `persistent_browser_mode` field will be omitted from the resulting object.
+  - `sign_in_frequency` (`number`): Set the `sign_in_frequency` field on the resulting object. When `null`, the `sign_in_frequency` field will be omitted from the resulting object.
+  - `sign_in_frequency_period` (`string`): Set the `sign_in_frequency_period` field on the resulting object. When `null`, the `sign_in_frequency_period` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `session_controls` sub block.
@@ -542,10 +542,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `read` (`string`):  When `null`, the `read` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `read` (`string`): Set the `read` field on the resulting object. When `null`, the `read` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
