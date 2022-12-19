@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `display_name` (`string`): The display name of the directory role When `null`, the `display_name` field will be omitted from the resulting object.
   - `template_id` (`string`): The object ID of the template associated with the directory role When `null`, the `template_id` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.directory_role.timeouts.new](#fn-directoryroletimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.directory_role.timeouts.new](#fn-directory_roletimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -69,7 +69,7 @@ newAttrs()
 `azuread.directory_role.newAttrs` constructs a new object with attributes and blocks configured for the `directory_role`
 Terraform resource.
 
-Unlike [azuread.directory_role.new](#fn-directoryrolenew), this function will not inject the `resource`
+Unlike [azuread.directory_role.new](#fn-directory_rolenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -79,7 +79,7 @@ injecting into a complete block.
 **Args**:
   - `display_name` (`string`): The display name of the directory role When `null`, the `display_name` field will be omitted from the resulting object.
   - `template_id` (`string`): The object ID of the template associated with the directory role When `null`, the `template_id` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.directory_role.timeouts.new](#fn-directoryroletimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.directory_role.timeouts.new](#fn-directory_roletimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `directory_role` resource into the root Terraform configuration.

@@ -61,7 +61,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `end_date_relative` (`string`): A relative duration for which the password is valid until, for example `240h` (10 days) or `2400h30m`. Changing this field forces a new resource to be created When `null`, the `end_date_relative` field will be omitted from the resulting object.
   - `rotate_when_changed` (`obj`): Arbitrary map of values that, when changed, will trigger rotation of the password When `null`, the `rotate_when_changed` field will be omitted from the resulting object.
   - `start_date` (`string`): The start date from which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn&#39;t specified, the current date is used When `null`, the `start_date` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_password.timeouts.new](#fn-applicationpasswordtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_password.timeouts.new](#fn-application_passwordtimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,7 +77,7 @@ newAttrs()
 `azuread.application_password.newAttrs` constructs a new object with attributes and blocks configured for the `application_password`
 Terraform resource.
 
-Unlike [azuread.application_password.new](#fn-applicationpasswordnew), this function will not inject the `resource`
+Unlike [azuread.application_password.new](#fn-application_passwordnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -91,7 +91,7 @@ injecting into a complete block.
   - `end_date_relative` (`string`): A relative duration for which the password is valid until, for example `240h` (10 days) or `2400h30m`. Changing this field forces a new resource to be created When `null`, the `end_date_relative` field will be omitted from the resulting object.
   - `rotate_when_changed` (`obj`): Arbitrary map of values that, when changed, will trigger rotation of the password When `null`, the `rotate_when_changed` field will be omitted from the resulting object.
   - `start_date` (`string`): The start date from which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn&#39;t specified, the current date is used When `null`, the `start_date` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_password.timeouts.new](#fn-applicationpasswordtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_password.timeouts.new](#fn-application_passwordtimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `application_password` resource into the root Terraform configuration.

@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `group_object_id` (`string`): The object ID of the group you want to add the member to
   - `member_object_id` (`string`): The object ID of the principal you want to add as a member to the group. Supported object types are Users, Groups or Service Principals
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group_member.timeouts.new](#fn-groupmembertimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group_member.timeouts.new](#fn-group_membertimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -69,7 +69,7 @@ newAttrs()
 `azuread.group_member.newAttrs` constructs a new object with attributes and blocks configured for the `group_member`
 Terraform resource.
 
-Unlike [azuread.group_member.new](#fn-groupmembernew), this function will not inject the `resource`
+Unlike [azuread.group_member.new](#fn-group_membernew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -79,7 +79,7 @@ injecting into a complete block.
 **Args**:
   - `group_object_id` (`string`): The object ID of the group you want to add the member to
   - `member_object_id` (`string`): The object ID of the principal you want to add as a member to the group. Supported object types are Users, Groups or Service Principals
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group_member.timeouts.new](#fn-groupmembertimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group_member.timeouts.new](#fn-group_membertimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `group_member` resource into the root Terraform configuration.

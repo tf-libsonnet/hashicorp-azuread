@@ -59,7 +59,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `ignore_missing` (`bool`): Ignore missing service principals and return the service principals that were found. The data source will still fail if no service principals are found When `null`, the `ignore_missing` field will be omitted from the resulting object.
   - `object_ids` (`list`): The object IDs of the service principals When `null`, the `object_ids` field will be omitted from the resulting object.
   - `return_all` (`bool`): Fetch all service principals with no filter and return all that were found. The data source will still fail if no service principals are found. When `null`, the `return_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.service_principals.timeouts.new](#fn-serviceprincipalstimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.service_principals.timeouts.new](#fn-service_principalstimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -75,7 +75,7 @@ newAttrs()
 `azuread.data.service_principals.newAttrs` constructs a new object with attributes and blocks configured for the `service_principals`
 Terraform data source.
 
-Unlike [azuread.data.service_principals.new](#fn-serviceprincipalsnew), this function will not inject the `data source`
+Unlike [azuread.data.service_principals.new](#fn-service_principalsnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -88,7 +88,7 @@ injecting into a complete block.
   - `ignore_missing` (`bool`): Ignore missing service principals and return the service principals that were found. The data source will still fail if no service principals are found When `null`, the `ignore_missing` field will be omitted from the resulting object.
   - `object_ids` (`list`): The object IDs of the service principals When `null`, the `object_ids` field will be omitted from the resulting object.
   - `return_all` (`bool`): Fetch all service principals with no filter and return all that were found. The data source will still fail if no service principals are found. When `null`, the `return_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.service_principals.timeouts.new](#fn-serviceprincipalstimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.service_principals.timeouts.new](#fn-service_principalstimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `service_principals` data source into the root Terraform configuration.

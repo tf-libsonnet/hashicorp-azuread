@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `dataSrcLabel` (`string`): The name label of the block.
   - `display_name` (`string`): The display name for the application template When `null`, the `display_name` field will be omitted from the resulting object.
   - `template_id` (`string`): The application template&#39;s ID When `null`, the `template_id` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.application_template.timeouts.new](#fn-applicationtemplatetimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.application_template.timeouts.new](#fn-application_templatetimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -69,7 +69,7 @@ newAttrs()
 `azuread.data.application_template.newAttrs` constructs a new object with attributes and blocks configured for the `application_template`
 Terraform data source.
 
-Unlike [azuread.data.application_template.new](#fn-applicationtemplatenew), this function will not inject the `data source`
+Unlike [azuread.data.application_template.new](#fn-application_templatenew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -79,7 +79,7 @@ injecting into a complete block.
 **Args**:
   - `display_name` (`string`): The display name for the application template When `null`, the `display_name` field will be omitted from the resulting object.
   - `template_id` (`string`): The application template&#39;s ID When `null`, the `template_id` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.application_template.timeouts.new](#fn-applicationtemplatetimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.application_template.timeouts.new](#fn-application_templatetimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `application_template` data source into the root Terraform configuration.

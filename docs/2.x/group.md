@@ -89,7 +89,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `theme` (`string`): The colour theme for a Microsoft 365 group When `null`, the `theme` field will be omitted from the resulting object.
   - `types` (`list`): A set of group types to configure for the group. `Unified` specifies a Microsoft 365 group. Required when `mail_enabled` is true When `null`, the `types` field will be omitted from the resulting object.
   - `visibility` (`string`): Specifies the group join policy and group content visibility When `null`, the `visibility` field will be omitted from the resulting object.
-  - `dynamic_membership` (`list[obj]`): An optional block to configure dynamic membership for the group. Cannot be used with `members` When `null`, the `dynamic_membership` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.dynamic_membership.new](#fn-groupdynamicmembershipnew) constructor.
+  - `dynamic_membership` (`list[obj]`): An optional block to configure dynamic membership for the group. Cannot be used with `members` When `null`, the `dynamic_membership` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.dynamic_membership.new](#fn-groupdynamic_membershipnew) constructor.
   - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.timeouts.new](#fn-grouptimeoutsnew) constructor.
 
 **Returns**:
@@ -132,7 +132,7 @@ injecting into a complete block.
   - `theme` (`string`): The colour theme for a Microsoft 365 group When `null`, the `theme` field will be omitted from the resulting object.
   - `types` (`list`): A set of group types to configure for the group. `Unified` specifies a Microsoft 365 group. Required when `mail_enabled` is true When `null`, the `types` field will be omitted from the resulting object.
   - `visibility` (`string`): Specifies the group join policy and group content visibility When `null`, the `visibility` field will be omitted from the resulting object.
-  - `dynamic_membership` (`list[obj]`): An optional block to configure dynamic membership for the group. Cannot be used with `members` When `null`, the `dynamic_membership` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.dynamic_membership.new](#fn-groupdynamicmembershipnew) constructor.
+  - `dynamic_membership` (`list[obj]`): An optional block to configure dynamic membership for the group. Cannot be used with `members` When `null`, the `dynamic_membership` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.dynamic_membership.new](#fn-groupdynamic_membershipnew) constructor.
   - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.timeouts.new](#fn-grouptimeoutsnew) constructor.
 
 **Returns**:

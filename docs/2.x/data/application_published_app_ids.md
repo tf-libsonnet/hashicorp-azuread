@@ -49,7 +49,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.application_published_app_ids.timeouts.new](#fn-applicationpublishedappidstimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.application_published_app_ids.timeouts.new](#fn-application_published_app_idstimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -65,7 +65,7 @@ newAttrs()
 `azuread.data.application_published_app_ids.newAttrs` constructs a new object with attributes and blocks configured for the `application_published_app_ids`
 Terraform data source.
 
-Unlike [azuread.data.application_published_app_ids.new](#fn-applicationpublishedappidsnew), this function will not inject the `data source`
+Unlike [azuread.data.application_published_app_ids.new](#fn-application_published_app_idsnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -73,7 +73,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.application_published_app_ids.timeouts.new](#fn-applicationpublishedappidstimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.application_published_app_ids.timeouts.new](#fn-application_published_app_idstimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `application_published_app_ids` data source into the root Terraform configuration.
