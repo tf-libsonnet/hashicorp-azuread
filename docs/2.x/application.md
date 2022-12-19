@@ -795,7 +795,7 @@ Terraform sub block.
   - `known_client_applications` (`list`): Used for bundling consent if you have a solution that contains two parts: a client app and a custom web API app When `null`, the `known_client_applications` field will be omitted from the resulting object.
   - `mapped_claims_enabled` (`bool`): Allows an application to use claims mapping without specifying a custom signing key When `null`, the `mapped_claims_enabled` field will be omitted from the resulting object.
   - `requested_access_token_version` (`number`): The access token version expected by this resource When `null`, the `requested_access_token_version` field will be omitted from the resulting object.
-  - `oauth2_permission_scope` (`list[obj]`): One or more `oauth2_permission_scope` blocks to describe delegated permissions exposed by the web API represented by this application When `null`, the `oauth2_permission_scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.api.oauth2_permission_scope.new](#fn-applicationoauth2_permission_scopenew) constructor.
+  - `oauth2_permission_scope` (`list[obj]`): One or more `oauth2_permission_scope` blocks to describe delegated permissions exposed by the web API represented by this application When `null`, the `oauth2_permission_scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.api.oauth2_permission_scope.new](#fn-apioauth2_permission_scopenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `api` sub block.
@@ -900,9 +900,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `access_token` (`list[obj]`):  When `null`, the `access_token` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.access_token.new](#fn-applicationaccess_tokennew) constructor.
-  - `id_token` (`list[obj]`):  When `null`, the `id_token` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.id_token.new](#fn-applicationid_tokennew) constructor.
-  - `saml2_token` (`list[obj]`):  When `null`, the `saml2_token` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.saml2_token.new](#fn-applicationsaml2_tokennew) constructor.
+  - `access_token` (`list[obj]`):  When `null`, the `access_token` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.access_token.new](#fn-optional_claimsaccess_tokennew) constructor.
+  - `id_token` (`list[obj]`):  When `null`, the `id_token` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.id_token.new](#fn-optional_claimsid_tokennew) constructor.
+  - `saml2_token` (`list[obj]`):  When `null`, the `saml2_token` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.optional_claims.saml2_token.new](#fn-optional_claimssaml2_tokennew) constructor.
 
 **Returns**:
   - An attribute object that represents the `optional_claims` sub block.
@@ -1027,7 +1027,7 @@ Terraform sub block.
 
 **Args**:
   - `resource_app_id` (`string`): 
-  - `resource_access` (`list[obj]`):  When `null`, the `resource_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.required_resource_access.resource_access.new](#fn-applicationresource_accessnew) constructor.
+  - `resource_access` (`list[obj]`):  When `null`, the `resource_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.required_resource_access.resource_access.new](#fn-required_resource_accessresource_accessnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `required_resource_access` sub block.
@@ -1125,7 +1125,7 @@ Terraform sub block.
   - `homepage_url` (`string`): Home page or landing page of the application When `null`, the `homepage_url` field will be omitted from the resulting object.
   - `logout_url` (`string`): The URL that will be used by Microsoft&#39;s authorization service to sign out a user using front-channel, back-channel or SAML logout protocols When `null`, the `logout_url` field will be omitted from the resulting object.
   - `redirect_uris` (`list`): The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent When `null`, the `redirect_uris` field will be omitted from the resulting object.
-  - `implicit_grant` (`list[obj]`):  When `null`, the `implicit_grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.web.implicit_grant.new](#fn-applicationimplicit_grantnew) constructor.
+  - `implicit_grant` (`list[obj]`):  When `null`, the `implicit_grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application.web.implicit_grant.new](#fn-webimplicit_grantnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `web` sub block.

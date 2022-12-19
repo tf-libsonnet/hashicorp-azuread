@@ -314,11 +314,11 @@ Terraform sub block.
   - `client_app_types` (`list`): 
   - `sign_in_risk_levels` (`list`):  When `null`, the `sign_in_risk_levels` field will be omitted from the resulting object.
   - `user_risk_levels` (`list`):  When `null`, the `user_risk_levels` field will be omitted from the resulting object.
-  - `applications` (`list[obj]`):  When `null`, the `applications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.applications.new](#fn-conditional_access_policyapplicationsnew) constructor.
-  - `devices` (`list[obj]`):  When `null`, the `devices` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.devices.new](#fn-conditional_access_policydevicesnew) constructor.
-  - `locations` (`list[obj]`):  When `null`, the `locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.locations.new](#fn-conditional_access_policylocationsnew) constructor.
-  - `platforms` (`list[obj]`):  When `null`, the `platforms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.platforms.new](#fn-conditional_access_policyplatformsnew) constructor.
-  - `users` (`list[obj]`):  When `null`, the `users` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.new](#fn-conditional_access_policyusersnew) constructor.
+  - `applications` (`list[obj]`):  When `null`, the `applications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.applications.new](#fn-conditionsapplicationsnew) constructor.
+  - `devices` (`list[obj]`):  When `null`, the `devices` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.devices.new](#fn-conditionsdevicesnew) constructor.
+  - `locations` (`list[obj]`):  When `null`, the `locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.locations.new](#fn-conditionslocationsnew) constructor.
+  - `platforms` (`list[obj]`):  When `null`, the `platforms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.platforms.new](#fn-conditionsplatformsnew) constructor.
+  - `users` (`list[obj]`):  When `null`, the `users` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.new](#fn-conditionsusersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `conditions` sub block.
@@ -366,7 +366,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.devices.filter.new](#fn-conditional_access_policyconditionsfilternew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.devices.filter.new](#fn-conditionsconditionsfilternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `devices` sub block.
