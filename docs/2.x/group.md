@@ -89,8 +89,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `theme` (`string`): The colour theme for a Microsoft 365 group When `null`, the `theme` field will be omitted from the resulting object.
   - `types` (`list`): A set of group types to configure for the group. `Unified` specifies a Microsoft 365 group. Required when `mail_enabled` is true When `null`, the `types` field will be omitted from the resulting object.
   - `visibility` (`string`): Specifies the group join policy and group content visibility When `null`, the `visibility` field will be omitted from the resulting object.
-  - `dynamic_membership` (`list[obj]`): An optional block to configure dynamic membership for the group. Cannot be used with `members` When `null`, the `dynamic_membership` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.dynamic_membership.new](#fn-groupdynamicmembershipnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.timeouts.new](#fn-grouptimeoutsnew) constructor.
+  - `dynamic_membership` (`list[obj]`): An optional block to configure dynamic membership for the group. Cannot be used with `members` When `null`, the `dynamic_membership` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.dynamic_membership.new](#fn-dynamic_membershipnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -106,7 +106,7 @@ newAttrs()
 `azuread.group.newAttrs` constructs a new object with attributes and blocks configured for the `group`
 Terraform resource.
 
-Unlike [azuread.group.new](#fn-groupnew), this function will not inject the `resource`
+Unlike [azuread.group.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -132,8 +132,8 @@ injecting into a complete block.
   - `theme` (`string`): The colour theme for a Microsoft 365 group When `null`, the `theme` field will be omitted from the resulting object.
   - `types` (`list`): A set of group types to configure for the group. `Unified` specifies a Microsoft 365 group. Required when `mail_enabled` is true When `null`, the `types` field will be omitted from the resulting object.
   - `visibility` (`string`): Specifies the group join policy and group content visibility When `null`, the `visibility` field will be omitted from the resulting object.
-  - `dynamic_membership` (`list[obj]`): An optional block to configure dynamic membership for the group. Cannot be used with `members` When `null`, the `dynamic_membership` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.dynamic_membership.new](#fn-groupdynamicmembershipnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.timeouts.new](#fn-grouptimeoutsnew) constructor.
+  - `dynamic_membership` (`list[obj]`): An optional block to configure dynamic membership for the group. Cannot be used with `members` When `null`, the `dynamic_membership` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.dynamic_membership.new](#fn-dynamic_membershipnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `group` resource into the root Terraform configuration.

@@ -55,7 +55,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `enabled` (`bool`): Whether or not the synchronization job is enabled When `null`, the `enabled` field will be omitted from the resulting object.
   - `service_principal_id` (`string`): The object ID of the service principal for which this synchronization job should be created
   - `template_id` (`string`): Identifier of the synchronization template this job is based on.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.synchronization_job.timeouts.new](#fn-synchronizationjobtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.synchronization_job.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -71,7 +71,7 @@ newAttrs()
 `azuread.synchronization_job.newAttrs` constructs a new object with attributes and blocks configured for the `synchronization_job`
 Terraform resource.
 
-Unlike [azuread.synchronization_job.new](#fn-synchronizationjobnew), this function will not inject the `resource`
+Unlike [azuread.synchronization_job.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -82,7 +82,7 @@ injecting into a complete block.
   - `enabled` (`bool`): Whether or not the synchronization job is enabled When `null`, the `enabled` field will be omitted from the resulting object.
   - `service_principal_id` (`string`): The object ID of the service principal for which this synchronization job should be created
   - `template_id` (`string`): Identifier of the synchronization template this job is based on.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.synchronization_job.timeouts.new](#fn-synchronizationjobtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.synchronization_job.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `synchronization_job` resource into the root Terraform configuration.

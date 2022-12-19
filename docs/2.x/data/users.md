@@ -59,7 +59,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `object_ids` (`list`): The object IDs of the users When `null`, the `object_ids` field will be omitted from the resulting object.
   - `return_all` (`bool`): Fetch all users with no filter and return all that were found. The data source will still fail if no users are found. When `null`, the `return_all` field will be omitted from the resulting object.
   - `user_principal_names` (`list`): The user principal names (UPNs) of the users When `null`, the `user_principal_names` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.users.timeouts.new](#fn-userstimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.users.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -75,7 +75,7 @@ newAttrs()
 `azuread.data.users.newAttrs` constructs a new object with attributes and blocks configured for the `users`
 Terraform data source.
 
-Unlike [azuread.data.users.new](#fn-usersnew), this function will not inject the `data source`
+Unlike [azuread.data.users.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -88,7 +88,7 @@ injecting into a complete block.
   - `object_ids` (`list`): The object IDs of the users When `null`, the `object_ids` field will be omitted from the resulting object.
   - `return_all` (`bool`): Fetch all users with no filter and return all that were found. The data source will still fail if no users are found. When `null`, the `return_all` field will be omitted from the resulting object.
   - `user_principal_names` (`list`): The user principal names (UPNs) of the users When `null`, the `user_principal_names` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.users.timeouts.new](#fn-userstimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.users.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `users` data source into the root Terraform configuration.

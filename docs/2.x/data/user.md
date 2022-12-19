@@ -55,7 +55,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `mail_nickname` (`string`): The email alias of the user When `null`, the `mail_nickname` field will be omitted from the resulting object.
   - `object_id` (`string`): The object ID of the user When `null`, the `object_id` field will be omitted from the resulting object.
   - `user_principal_name` (`string`): The user principal name (UPN) of the user When `null`, the `user_principal_name` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.user.timeouts.new](#fn-usertimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.user.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -71,7 +71,7 @@ newAttrs()
 `azuread.data.user.newAttrs` constructs a new object with attributes and blocks configured for the `user`
 Terraform data source.
 
-Unlike [azuread.data.user.new](#fn-usernew), this function will not inject the `data source`
+Unlike [azuread.data.user.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -82,7 +82,7 @@ injecting into a complete block.
   - `mail_nickname` (`string`): The email alias of the user When `null`, the `mail_nickname` field will be omitted from the resulting object.
   - `object_id` (`string`): The object ID of the user When `null`, the `object_id` field will be omitted from the resulting object.
   - `user_principal_name` (`string`): The user principal name (UPN) of the user When `null`, the `user_principal_name` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.user.timeouts.new](#fn-usertimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.user.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `user` data source into the root Terraform configuration.

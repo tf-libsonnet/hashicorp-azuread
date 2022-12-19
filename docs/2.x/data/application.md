@@ -55,7 +55,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `application_id` (`string`): The Application ID (also called Client ID) When `null`, the `application_id` field will be omitted from the resulting object.
   - `display_name` (`string`): The display name for the application When `null`, the `display_name` field will be omitted from the resulting object.
   - `object_id` (`string`): The application&#39;s object ID When `null`, the `object_id` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.application.timeouts.new](#fn-applicationtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.application.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -71,7 +71,7 @@ newAttrs()
 `azuread.data.application.newAttrs` constructs a new object with attributes and blocks configured for the `application`
 Terraform data source.
 
-Unlike [azuread.data.application.new](#fn-applicationnew), this function will not inject the `data source`
+Unlike [azuread.data.application.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -82,7 +82,7 @@ injecting into a complete block.
   - `application_id` (`string`): The Application ID (also called Client ID) When `null`, the `application_id` field will be omitted from the resulting object.
   - `display_name` (`string`): The display name for the application When `null`, the `display_name` field will be omitted from the resulting object.
   - `object_id` (`string`): The application&#39;s object ID When `null`, the `object_id` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.application.timeouts.new](#fn-applicationtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.application.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `application` data source into the root Terraform configuration.
