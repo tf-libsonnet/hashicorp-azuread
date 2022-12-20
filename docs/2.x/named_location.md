@@ -58,10 +58,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `display_name` (`string`): Set the `display_name` field on the resulting resource block.
-  - `country` (`list[obj]`): Set the `country` field on the resulting resource block. When `null`, the `country` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.named_location.country.new](#fn-countrynew) constructor.
-  - `ip` (`list[obj]`): Set the `ip` field on the resulting resource block. When `null`, the `ip` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.named_location.ip.new](#fn-ipnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.named_location.timeouts.new](#fn-timeoutsnew) constructor.
+  - `display_name` (`string`): 
+  - `country` (`list[obj]`):  When `null`, the `country` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.named_location.country.new](#fn-countrynew) constructor.
+  - `ip` (`list[obj]`):  When `null`, the `ip` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.named_location.ip.new](#fn-ipnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.named_location.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,10 +85,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `display_name` (`string`): Set the `display_name` field on the resulting object.
-  - `country` (`list[obj]`): Set the `country` field on the resulting object. When `null`, the `country` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.named_location.country.new](#fn-countrynew) constructor.
-  - `ip` (`list[obj]`): Set the `ip` field on the resulting object. When `null`, the `ip` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.named_location.ip.new](#fn-ipnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.named_location.timeouts.new](#fn-timeoutsnew) constructor.
+  - `display_name` (`string`): 
+  - `country` (`list[obj]`):  When `null`, the `country` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.named_location.country.new](#fn-countrynew) constructor.
+  - `ip` (`list[obj]`):  When `null`, the `ip` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.named_location.ip.new](#fn-ipnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.named_location.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `named_location` resource into the root Terraform configuration.
@@ -237,8 +237,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `countries_and_regions` (`list`): Set the `countries_and_regions` field on the resulting object.
-  - `include_unknown_countries_and_regions` (`bool`): Set the `include_unknown_countries_and_regions` field on the resulting object. When `null`, the `include_unknown_countries_and_regions` field will be omitted from the resulting object.
+  - `countries_and_regions` (`list`): 
+  - `include_unknown_countries_and_regions` (`bool`):  When `null`, the `include_unknown_countries_and_regions` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `country` sub block.
@@ -261,8 +261,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `ip_ranges` (`list`): Set the `ip_ranges` field on the resulting object.
-  - `trusted` (`bool`): Set the `trusted` field on the resulting object. When `null`, the `trusted` field will be omitted from the resulting object.
+  - `ip_ranges` (`list`): 
+  - `trusted` (`bool`):  When `null`, the `trusted` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ip` sub block.
@@ -285,10 +285,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `read` (`string`): Set the `read` field on the resulting object. When `null`, the `read` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `read` (`string`):  When `null`, the `read` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

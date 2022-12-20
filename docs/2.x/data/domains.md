@@ -61,7 +61,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `only_initial` (`bool`): Set to `true` to only return the initial domain, which is your primary Azure Active Directory tenant domain When `null`, the `only_initial` field will be omitted from the resulting object.
   - `only_root` (`bool`): Set to `true` to only return verified root domains. Excludes subdomains and unverified domains When `null`, the `only_root` field will be omitted from the resulting object.
   - `supports_services` (`list`): A list of supported services that must be supported by a domain When `null`, the `supports_services` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting data source block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.domains.timeouts.new](#fn-timeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.domains.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -91,7 +91,7 @@ injecting into a complete block.
   - `only_initial` (`bool`): Set to `true` to only return the initial domain, which is your primary Azure Active Directory tenant domain When `null`, the `only_initial` field will be omitted from the resulting object.
   - `only_root` (`bool`): Set to `true` to only return verified root domains. Excludes subdomains and unverified domains When `null`, the `only_root` field will be omitted from the resulting object.
   - `supports_services` (`list`): A list of supported services that must be supported by a domain When `null`, the `supports_services` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.domains.timeouts.new](#fn-timeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.domains.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `domains` data source into the root Terraform configuration.
@@ -246,7 +246,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `read` (`string`): Set the `read` field on the resulting object. When `null`, the `read` field will be omitted from the resulting object.
+  - `read` (`string`):  When `null`, the `read` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

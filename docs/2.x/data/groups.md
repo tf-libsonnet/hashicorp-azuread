@@ -63,7 +63,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `object_ids` (`list`): The object IDs of the groups When `null`, the `object_ids` field will be omitted from the resulting object.
   - `return_all` (`bool`): Retrieve all groups with no filter When `null`, the `return_all` field will be omitted from the resulting object.
   - `security_enabled` (`bool`): Whether the groups are security-enabled When `null`, the `security_enabled` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting data source block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.groups.timeouts.new](#fn-timeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.groups.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -94,7 +94,7 @@ injecting into a complete block.
   - `object_ids` (`list`): The object IDs of the groups When `null`, the `object_ids` field will be omitted from the resulting object.
   - `return_all` (`bool`): Retrieve all groups with no filter When `null`, the `return_all` field will be omitted from the resulting object.
   - `security_enabled` (`bool`): Whether the groups are security-enabled When `null`, the `security_enabled` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.groups.timeouts.new](#fn-timeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.groups.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `groups` data source into the root Terraform configuration.
@@ -265,7 +265,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `read` (`string`): Set the `read` field on the resulting object. When `null`, the `read` field will be omitted from the resulting object.
+  - `read` (`string`):  When `null`, the `read` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

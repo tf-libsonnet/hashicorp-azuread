@@ -59,7 +59,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `hidden_membership_enabled` (`bool`): Whether the administrative unit and its members are hidden or publicly viewable in the directory When `null`, the `hidden_membership_enabled` field will be omitted from the resulting object.
   - `members` (`list`): A set of object IDs of members who should be present in this administrative unit. Supported object types are Users or Groups When `null`, the `members` field will be omitted from the resulting object.
   - `prevent_duplicate_names` (`bool`): If `true`, will return an error if an existing administrative unit is found with the same name When `null`, the `prevent_duplicate_names` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.administrative_unit.timeouts.new](#fn-timeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.administrative_unit.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -88,7 +88,7 @@ injecting into a complete block.
   - `hidden_membership_enabled` (`bool`): Whether the administrative unit and its members are hidden or publicly viewable in the directory When `null`, the `hidden_membership_enabled` field will be omitted from the resulting object.
   - `members` (`list`): A set of object IDs of members who should be present in this administrative unit. Supported object types are Users or Groups When `null`, the `members` field will be omitted from the resulting object.
   - `prevent_duplicate_names` (`bool`): If `true`, will return an error if an existing administrative unit is found with the same name When `null`, the `prevent_duplicate_names` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.administrative_unit.timeouts.new](#fn-timeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.administrative_unit.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `administrative_unit` resource into the root Terraform configuration.
@@ -227,10 +227,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `read` (`string`): Set the `read` field on the resulting object. When `null`, the `read` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `read` (`string`):  When `null`, the `read` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
