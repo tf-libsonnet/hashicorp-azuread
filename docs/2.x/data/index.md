@@ -12,6 +12,7 @@ permalink: /data/
 * [application_template](application_template.md)
 * [client_config](client_config.md)
 * [directory_object](directory_object.md)
+* [directory_roles](directory_roles.md)
 * [domains](domains.md)
 * [group](group.md)
 * [groups](groups.md)

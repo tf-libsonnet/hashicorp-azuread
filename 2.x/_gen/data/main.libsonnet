@@ -7,6 +7,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   application_template: (import 'application_template.libsonnet'),
   client_config: (import 'client_config.libsonnet'),
   directory_object: (import 'directory_object.libsonnet'),
+  directory_roles: (import 'directory_roles.libsonnet'),
   domains: (import 'domains.libsonnet'),
   group: (import 'group.libsonnet'),
   groups: (import 'groups.libsonnet'),
