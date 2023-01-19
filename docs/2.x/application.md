@@ -19,6 +19,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withApiMixin()`](#fn-withapimixin)
 * [`fn withAppRole()`](#fn-withapprole)
 * [`fn withAppRoleMixin()`](#fn-withapprolemixin)
+* [`fn withDescription()`](#fn-withdescription)
 * [`fn withDeviceOnlyAuthEnabled()`](#fn-withdeviceonlyauthenabled)
 * [`fn withDisplayName()`](#fn-withdisplayname)
 * [`fn withFallbackPublicClientEnabled()`](#fn-withfallbackpublicclientenabled)
@@ -109,6 +110,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
+  - `description` (`string`): Description of the application as shown to end users When `null`, the `description` field will be omitted from the resulting object.
   - `device_only_auth_enabled` (`bool`): Specifies whether this application supports device authentication without a user. When `null`, the `device_only_auth_enabled` field will be omitted from the resulting object.
   - `display_name` (`string`): The display name for the application
   - `fallback_public_client_enabled` (`bool`): Specifies whether the application is a public client. Appropriate for apps using token grant flows that don&#39;t use a redirect URI When `null`, the `fallback_public_client_enabled` field will be omitted from the resulting object.
@@ -157,6 +159,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
+  - `description` (`string`): Description of the application as shown to end users When `null`, the `description` field will be omitted from the resulting object.
   - `device_only_auth_enabled` (`bool`): Specifies whether this application supports device authentication without a user. When `null`, the `device_only_auth_enabled` field will be omitted from the resulting object.
   - `display_name` (`string`): The display name for the application
   - `fallback_public_client_enabled` (`bool`): Specifies whether the application is a public client. Appropriate for apps using token grant flows that don&#39;t use a redirect URI When `null`, the `fallback_public_client_enabled` field will be omitted from the resulting object.
@@ -259,6 +262,22 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `app_role` field.
+
+
+### fn withDescription
+
+```ts
+withDescription()
+```
+
+`azuread.string.withDescription` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the description field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `description` field.
 
 
 ### fn withDeviceOnlyAuthEnabled

@@ -36,6 +36,7 @@ project.
 * [service_principal_claims_mapping_policy_assignment](service_principal_claims_mapping_policy_assignment.md)
 * [service_principal_delegated_permission_grant](service_principal_delegated_permission_grant.md)
 * [service_principal_password](service_principal_password.md)
+* [service_principal_token_signing_certificate](service_principal_token_signing_certificate.md)
 * [synchronization_job](synchronization_job.md)
 * [synchronization_secret](synchronization_secret.md)
 * [user](user.md)
