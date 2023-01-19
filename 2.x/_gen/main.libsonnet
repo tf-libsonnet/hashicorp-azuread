@@ -25,6 +25,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   service_principal_claims_mapping_policy_assignment: (import 'resources/service_principal_claims_mapping_policy_assignment.libsonnet'),
   service_principal_delegated_permission_grant: (import 'resources/service_principal_delegated_permission_grant.libsonnet'),
   service_principal_password: (import 'resources/service_principal_password.libsonnet'),
+  service_principal_token_signing_certificate: (import 'resources/service_principal_token_signing_certificate.libsonnet'),
   synchronization_job: (import 'resources/synchronization_job.libsonnet'),
   synchronization_secret: (import 'resources/synchronization_secret.libsonnet'),
   user: (import 'resources/user.libsonnet'),
