@@ -29,6 +29,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withIdentifierUris()`](#fn-withidentifieruris)
 * [`fn withLogoImage()`](#fn-withlogoimage)
 * [`fn withMarketingUrl()`](#fn-withmarketingurl)
+* [`fn withNotes()`](#fn-withnotes)
 * [`fn withOauth2PostResponseRequired()`](#fn-withoauth2postresponserequired)
 * [`fn withOptionalClaims()`](#fn-withoptionalclaims)
 * [`fn withOptionalClaimsMixin()`](#fn-withoptionalclaimsmixin)
@@ -118,6 +119,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `identifier_uris` (`list`): The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant When `null`, the `identifier_uris` field will be omitted from the resulting object.
   - `logo_image` (`string`): Base64 encoded logo image in gif, png or jpeg format When `null`, the `logo_image` field will be omitted from the resulting object.
   - `marketing_url` (`string`): URL of the application&#39;s marketing page When `null`, the `marketing_url` field will be omitted from the resulting object.
+  - `notes` (`string`): User-specified notes relevant for the management of the application When `null`, the `notes` field will be omitted from the resulting object.
   - `oauth2_post_response_required` (`bool`): Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests. When `null`, the `oauth2_post_response_required` field will be omitted from the resulting object.
   - `owners` (`list`): A list of object IDs of principals that will be granted ownership of the application When `null`, the `owners` field will be omitted from the resulting object.
   - `prevent_duplicate_names` (`bool`): If `true`, will return an error if an existing application is found with the same name When `null`, the `prevent_duplicate_names` field will be omitted from the resulting object.
@@ -167,6 +169,7 @@ injecting into a complete block.
   - `identifier_uris` (`list`): The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant When `null`, the `identifier_uris` field will be omitted from the resulting object.
   - `logo_image` (`string`): Base64 encoded logo image in gif, png or jpeg format When `null`, the `logo_image` field will be omitted from the resulting object.
   - `marketing_url` (`string`): URL of the application&#39;s marketing page When `null`, the `marketing_url` field will be omitted from the resulting object.
+  - `notes` (`string`): User-specified notes relevant for the management of the application When `null`, the `notes` field will be omitted from the resulting object.
   - `oauth2_post_response_required` (`bool`): Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests. When `null`, the `oauth2_post_response_required` field will be omitted from the resulting object.
   - `owners` (`list`): A list of object IDs of principals that will be granted ownership of the application When `null`, the `owners` field will be omitted from the resulting object.
   - `prevent_duplicate_names` (`bool`): If `true`, will return an error if an existing application is found with the same name When `null`, the `prevent_duplicate_names` field will be omitted from the resulting object.
@@ -427,6 +430,22 @@ Terraform resource block to set or update the marketing_url field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `marketing_url` field.
+
+
+### fn withNotes
+
+```ts
+withNotes()
+```
+
+`azuread.string.withNotes` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the notes field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `notes` field.
 
 
 ### fn withOauth2PostResponseRequired

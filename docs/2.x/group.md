@@ -15,6 +15,7 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withAdministrativeUnitIds()`](#fn-withadministrativeunitids)
 * [`fn withAssignableToRole()`](#fn-withassignabletorole)
 * [`fn withAutoSubscribeNewMembers()`](#fn-withautosubscribenewmembers)
 * [`fn withBehaviors()`](#fn-withbehaviors)
@@ -71,6 +72,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
+  - `administrative_unit_ids` (`list`): The administrative unit IDs in which the group should be. If empty, the group will be created at the tenant level. When `null`, the `administrative_unit_ids` field will be omitted from the resulting object.
   - `assignable_to_role` (`bool`): Indicates whether this group can be assigned to an Azure Active Directory role. This property can only be `true` for security-enabled groups. When `null`, the `assignable_to_role` field will be omitted from the resulting object.
   - `auto_subscribe_new_members` (`bool`): Indicates whether new members added to the group will be auto-subscribed to receive email notifications. When `null`, the `auto_subscribe_new_members` field will be omitted from the resulting object.
   - `behaviors` (`list`): The group behaviours for a Microsoft 365 group When `null`, the `behaviors` field will be omitted from the resulting object.
@@ -114,6 +116,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
+  - `administrative_unit_ids` (`list`): The administrative unit IDs in which the group should be. If empty, the group will be created at the tenant level. When `null`, the `administrative_unit_ids` field will be omitted from the resulting object.
   - `assignable_to_role` (`bool`): Indicates whether this group can be assigned to an Azure Active Directory role. This property can only be `true` for security-enabled groups. When `null`, the `assignable_to_role` field will be omitted from the resulting object.
   - `auto_subscribe_new_members` (`bool`): Indicates whether new members added to the group will be auto-subscribed to receive email notifications. When `null`, the `auto_subscribe_new_members` field will be omitted from the resulting object.
   - `behaviors` (`list`): The group behaviours for a Microsoft 365 group When `null`, the `behaviors` field will be omitted from the resulting object.
@@ -137,6 +140,22 @@ injecting into a complete block.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `group` resource into the root Terraform configuration.
+
+
+### fn withAdministrativeUnitIds
+
+```ts
+withAdministrativeUnitIds()
+```
+
+`azuread.list.withAdministrativeUnitIds` constructs a mixin object that can be merged into the `list`
+Terraform resource block to set or update the administrative_unit_ids field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `administrative_unit_ids` field.
 
 
 ### fn withAssignableToRole
