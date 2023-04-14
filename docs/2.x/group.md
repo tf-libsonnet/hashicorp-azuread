@@ -29,6 +29,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withMailEnabled()`](#fn-withmailenabled)
 * [`fn withMailNickname()`](#fn-withmailnickname)
 * [`fn withMembers()`](#fn-withmembers)
+* [`fn withOnpremisesGroupType()`](#fn-withonpremisesgrouptype)
 * [`fn withOwners()`](#fn-withowners)
 * [`fn withPreventDuplicateNames()`](#fn-withpreventduplicatenames)
 * [`fn withProvisioningOptions()`](#fn-withprovisioningoptions)
@@ -38,6 +39,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`fn withTypes()`](#fn-withtypes)
 * [`fn withVisibility()`](#fn-withvisibility)
+* [`fn withWritebackEnabled()`](#fn-withwritebackenabled)
 * [`obj dynamic_membership`](#obj-dynamic_membership)
   * [`fn new()`](#fn-dynamic_membershipnew)
 * [`obj timeouts`](#obj-timeouts)
@@ -84,6 +86,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `mail_enabled` (`bool`): Whether the group is a mail enabled, with a shared group mailbox. At least one of `mail_enabled` or `security_enabled` must be specified. A group can be mail enabled _and_ security enabled When `null`, the `mail_enabled` field will be omitted from the resulting object.
   - `mail_nickname` (`string`): The mail alias for the group, unique in the organisation When `null`, the `mail_nickname` field will be omitted from the resulting object.
   - `members` (`list`): A set of members who should be present in this group. Supported object types are Users, Groups or Service Principals When `null`, the `members` field will be omitted from the resulting object.
+  - `onpremises_group_type` (`string`): Indicates the target on-premise group type the group will be written back as When `null`, the `onpremises_group_type` field will be omitted from the resulting object.
   - `owners` (`list`): A set of owners who own this group. Supported object types are Users or Service Principals When `null`, the `owners` field will be omitted from the resulting object.
   - `prevent_duplicate_names` (`bool`): If `true`, will return an error if an existing group is found with the same name When `null`, the `prevent_duplicate_names` field will be omitted from the resulting object.
   - `provisioning_options` (`list`): The group provisioning options for a Microsoft 365 group When `null`, the `provisioning_options` field will be omitted from the resulting object.
@@ -91,6 +94,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `theme` (`string`): The colour theme for a Microsoft 365 group When `null`, the `theme` field will be omitted from the resulting object.
   - `types` (`list`): A set of group types to configure for the group. `Unified` specifies a Microsoft 365 group. Required when `mail_enabled` is true When `null`, the `types` field will be omitted from the resulting object.
   - `visibility` (`string`): Specifies the group join policy and group content visibility When `null`, the `visibility` field will be omitted from the resulting object.
+  - `writeback_enabled` (`bool`): Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used When `null`, the `writeback_enabled` field will be omitted from the resulting object.
   - `dynamic_membership` (`list[obj]`): An optional block to configure dynamic membership for the group. Cannot be used with `members` When `null`, the `dynamic_membership` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.dynamic_membership.new](#fn-dynamic_membershipnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -128,6 +132,7 @@ injecting into a complete block.
   - `mail_enabled` (`bool`): Whether the group is a mail enabled, with a shared group mailbox. At least one of `mail_enabled` or `security_enabled` must be specified. A group can be mail enabled _and_ security enabled When `null`, the `mail_enabled` field will be omitted from the resulting object.
   - `mail_nickname` (`string`): The mail alias for the group, unique in the organisation When `null`, the `mail_nickname` field will be omitted from the resulting object.
   - `members` (`list`): A set of members who should be present in this group. Supported object types are Users, Groups or Service Principals When `null`, the `members` field will be omitted from the resulting object.
+  - `onpremises_group_type` (`string`): Indicates the target on-premise group type the group will be written back as When `null`, the `onpremises_group_type` field will be omitted from the resulting object.
   - `owners` (`list`): A set of owners who own this group. Supported object types are Users or Service Principals When `null`, the `owners` field will be omitted from the resulting object.
   - `prevent_duplicate_names` (`bool`): If `true`, will return an error if an existing group is found with the same name When `null`, the `prevent_duplicate_names` field will be omitted from the resulting object.
   - `provisioning_options` (`list`): The group provisioning options for a Microsoft 365 group When `null`, the `provisioning_options` field will be omitted from the resulting object.
@@ -135,6 +140,7 @@ injecting into a complete block.
   - `theme` (`string`): The colour theme for a Microsoft 365 group When `null`, the `theme` field will be omitted from the resulting object.
   - `types` (`list`): A set of group types to configure for the group. `Unified` specifies a Microsoft 365 group. Required when `mail_enabled` is true When `null`, the `types` field will be omitted from the resulting object.
   - `visibility` (`string`): Specifies the group join policy and group content visibility When `null`, the `visibility` field will be omitted from the resulting object.
+  - `writeback_enabled` (`bool`): Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used When `null`, the `writeback_enabled` field will be omitted from the resulting object.
   - `dynamic_membership` (`list[obj]`): An optional block to configure dynamic membership for the group. Cannot be used with `members` When `null`, the `dynamic_membership` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.dynamic_membership.new](#fn-dynamic_membershipnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.group.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -371,6 +377,22 @@ Terraform resource block to set or update the members field.
   - `value` (`list`): The value to set for the `members` field.
 
 
+### fn withOnpremisesGroupType
+
+```ts
+withOnpremisesGroupType()
+```
+
+`azuread.string.withOnpremisesGroupType` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the onpremises_group_type field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `onpremises_group_type` field.
+
+
 ### fn withOwners
 
 ```ts
@@ -517,6 +539,22 @@ Terraform resource block to set or update the visibility field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `visibility` field.
+
+
+### fn withWritebackEnabled
+
+```ts
+withWritebackEnabled()
+```
+
+`azuread.bool.withWritebackEnabled` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the writeback_enabled field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `writeback_enabled` field.
 
 
 ## obj dynamic_membership

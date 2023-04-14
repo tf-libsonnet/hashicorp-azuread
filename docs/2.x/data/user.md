@@ -15,6 +15,7 @@ This package contains functions and utilities for setting up the data source usi
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withMail()`](#fn-withmail)
 * [`fn withMailNickname()`](#fn-withmailnickname)
 * [`fn withObjectId()`](#fn-withobjectid)
 * [`fn withTimeouts()`](#fn-withtimeouts)
@@ -52,6 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
+  - `mail` (`string`): The SMTP address for the user When `null`, the `mail` field will be omitted from the resulting object.
   - `mail_nickname` (`string`): The email alias of the user When `null`, the `mail_nickname` field will be omitted from the resulting object.
   - `object_id` (`string`): The object ID of the user When `null`, the `object_id` field will be omitted from the resulting object.
   - `user_principal_name` (`string`): The user principal name (UPN) of the user When `null`, the `user_principal_name` field will be omitted from the resulting object.
@@ -79,6 +81,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
+  - `mail` (`string`): The SMTP address for the user When `null`, the `mail` field will be omitted from the resulting object.
   - `mail_nickname` (`string`): The email alias of the user When `null`, the `mail_nickname` field will be omitted from the resulting object.
   - `object_id` (`string`): The object ID of the user When `null`, the `object_id` field will be omitted from the resulting object.
   - `user_principal_name` (`string`): The user principal name (UPN) of the user When `null`, the `user_principal_name` field will be omitted from the resulting object.
@@ -86,6 +89,22 @@ injecting into a complete block.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `user` data source into the root Terraform configuration.
+
+
+### fn withMail
+
+```ts
+withMail()
+```
+
+`azuread.string.withMail` constructs a mixin object that can be merged into the `string`
+Terraform data source block to set or update the mail field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `mail` field.
 
 
 ### fn withMailNickname

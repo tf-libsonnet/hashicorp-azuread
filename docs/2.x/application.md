@@ -40,6 +40,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withPublicClientMixin()`](#fn-withpublicclientmixin)
 * [`fn withRequiredResourceAccess()`](#fn-withrequiredresourceaccess)
 * [`fn withRequiredResourceAccessMixin()`](#fn-withrequiredresourceaccessmixin)
+* [`fn withServiceManagementReference()`](#fn-withservicemanagementreference)
 * [`fn withSignInAudience()`](#fn-withsigninaudience)
 * [`fn withSinglePageApplication()`](#fn-withsinglepageapplication)
 * [`fn withSinglePageApplicationMixin()`](#fn-withsinglepageapplicationmixin)
@@ -124,6 +125,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `owners` (`list`): A list of object IDs of principals that will be granted ownership of the application When `null`, the `owners` field will be omitted from the resulting object.
   - `prevent_duplicate_names` (`bool`): If `true`, will return an error if an existing application is found with the same name When `null`, the `prevent_duplicate_names` field will be omitted from the resulting object.
   - `privacy_statement_url` (`string`): URL of the application&#39;s privacy statement When `null`, the `privacy_statement_url` field will be omitted from the resulting object.
+  - `service_management_reference` (`string`): References application or service contact information from a Service or Asset Management database When `null`, the `service_management_reference` field will be omitted from the resulting object.
   - `sign_in_audience` (`string`): The Microsoft account types that are supported for the current application When `null`, the `sign_in_audience` field will be omitted from the resulting object.
   - `support_url` (`string`): URL of the application&#39;s support page When `null`, the `support_url` field will be omitted from the resulting object.
   - `tags` (`list`): A set of tags to apply to the application When `null`, the `tags` field will be omitted from the resulting object.
@@ -174,6 +176,7 @@ injecting into a complete block.
   - `owners` (`list`): A list of object IDs of principals that will be granted ownership of the application When `null`, the `owners` field will be omitted from the resulting object.
   - `prevent_duplicate_names` (`bool`): If `true`, will return an error if an existing application is found with the same name When `null`, the `prevent_duplicate_names` field will be omitted from the resulting object.
   - `privacy_statement_url` (`string`): URL of the application&#39;s privacy statement When `null`, the `privacy_statement_url` field will be omitted from the resulting object.
+  - `service_management_reference` (`string`): References application or service contact information from a Service or Asset Management database When `null`, the `service_management_reference` field will be omitted from the resulting object.
   - `sign_in_audience` (`string`): The Microsoft account types that are supported for the current application When `null`, the `sign_in_audience` field will be omitted from the resulting object.
   - `support_url` (`string`): URL of the application&#39;s support page When `null`, the `support_url` field will be omitted from the resulting object.
   - `tags` (`list`): A set of tags to apply to the application When `null`, the `tags` field will be omitted from the resulting object.
@@ -621,6 +624,22 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `required_resource_access` field.
+
+
+### fn withServiceManagementReference
+
+```ts
+withServiceManagementReference()
+```
+
+`azuread.string.withServiceManagementReference` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the service_management_reference field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `service_management_reference` field.
 
 
 ### fn withSignInAudience
