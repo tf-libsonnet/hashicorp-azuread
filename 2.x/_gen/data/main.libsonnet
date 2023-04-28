@@ -3,6 +3,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   '#':: d.pkg(name='data', url='', help=''),
   access_package: (import 'access_package.libsonnet'),
   access_package_catalog: (import 'access_package_catalog.libsonnet'),
+  access_package_catalog_role: (import 'access_package_catalog_role.libsonnet'),
   administrative_unit: (import 'administrative_unit.libsonnet'),
   application: (import 'application.libsonnet'),
   application_published_app_ids: (import 'application_published_app_ids.libsonnet'),
