@@ -5,6 +5,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   access_package: (import 'resources/access_package.libsonnet'),
   access_package_assignment_policy: (import 'resources/access_package_assignment_policy.libsonnet'),
   access_package_catalog: (import 'resources/access_package_catalog.libsonnet'),
+  access_package_catalog_role_assignment: (import 'resources/access_package_catalog_role_assignment.libsonnet'),
   access_package_resource_catalog_association: (import 'resources/access_package_resource_catalog_association.libsonnet'),
   access_package_resource_package_association: (import 'resources/access_package_resource_package_association.libsonnet'),
   administrative_unit: (import 'resources/administrative_unit.libsonnet'),

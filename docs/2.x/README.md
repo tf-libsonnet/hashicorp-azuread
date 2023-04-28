@@ -14,6 +14,7 @@ project.
 * [access_package](access_package.md)
 * [access_package_assignment_policy](access_package_assignment_policy.md)
 * [access_package_catalog](access_package_catalog.md)
+* [access_package_catalog_role_assignment](access_package_catalog_role_assignment.md)
 * [access_package_resource_catalog_association](access_package_resource_catalog_association.md)
 * [access_package_resource_package_association](access_package_resource_package_association.md)
 * [administrative_unit](administrative_unit.md)
