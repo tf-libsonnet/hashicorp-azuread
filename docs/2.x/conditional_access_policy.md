@@ -29,6 +29,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-conditionsnew)
   * [`obj conditions.applications`](#obj-conditionsapplications)
     * [`fn new()`](#fn-conditionsapplicationsnew)
+  * [`obj conditions.client_applications`](#obj-conditionsclient_applications)
+    * [`fn new()`](#fn-conditionsclient_applicationsnew)
   * [`obj conditions.devices`](#obj-conditionsdevices)
     * [`fn new()`](#fn-conditionsdevicesnew)
     * [`obj conditions.devices.filter`](#obj-conditionsdevicesfilter)
@@ -315,6 +317,7 @@ Terraform sub block.
   - `sign_in_risk_levels` (`list`): Set the `sign_in_risk_levels` field on the resulting object. When `null`, the `sign_in_risk_levels` field will be omitted from the resulting object.
   - `user_risk_levels` (`list`): Set the `user_risk_levels` field on the resulting object. When `null`, the `user_risk_levels` field will be omitted from the resulting object.
   - `applications` (`list[obj]`): Set the `applications` field on the resulting object. When `null`, the `applications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.applications.new](#fn-conditionsapplicationsnew) constructor.
+  - `client_applications` (`list[obj]`): Set the `client_applications` field on the resulting object. When `null`, the `client_applications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.client_applications.new](#fn-conditionsclient_applicationsnew) constructor.
   - `devices` (`list[obj]`): Set the `devices` field on the resulting object. When `null`, the `devices` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.devices.new](#fn-conditionsdevicesnew) constructor.
   - `locations` (`list[obj]`): Set the `locations` field on the resulting object. When `null`, the `locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.locations.new](#fn-conditionslocationsnew) constructor.
   - `platforms` (`list[obj]`): Set the `platforms` field on the resulting object. When `null`, the `platforms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.platforms.new](#fn-conditionsplatformsnew) constructor.
@@ -347,6 +350,30 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `applications` sub block.
+
+
+## obj conditions.client_applications
+
+
+
+### fn conditions.client_applications.new
+
+```ts
+new()
+```
+
+
+`azuread.conditional_access_policy.conditions.client_applications.new` constructs a new object with attributes and blocks configured for the `client_applications`
+Terraform sub block.
+
+
+
+**Args**:
+  - `excluded_service_principals` (`list`): Set the `excluded_service_principals` field on the resulting object. When `null`, the `excluded_service_principals` field will be omitted from the resulting object.
+  - `included_service_principals` (`list`): Set the `included_service_principals` field on the resulting object. When `null`, the `included_service_principals` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `client_applications` sub block.
 
 
 ## obj conditions.devices
@@ -517,6 +544,7 @@ Terraform sub block.
 **Args**:
   - `application_enforced_restrictions_enabled` (`bool`): Set the `application_enforced_restrictions_enabled` field on the resulting object. When `null`, the `application_enforced_restrictions_enabled` field will be omitted from the resulting object.
   - `cloud_app_security_policy` (`string`): Set the `cloud_app_security_policy` field on the resulting object. When `null`, the `cloud_app_security_policy` field will be omitted from the resulting object.
+  - `disable_resilience_defaults` (`bool`): Set the `disable_resilience_defaults` field on the resulting object. When `null`, the `disable_resilience_defaults` field will be omitted from the resulting object.
   - `persistent_browser_mode` (`string`): Set the `persistent_browser_mode` field on the resulting object. When `null`, the `persistent_browser_mode` field will be omitted from the resulting object.
   - `sign_in_frequency` (`number`): Set the `sign_in_frequency` field on the resulting object. When `null`, the `sign_in_frequency` field will be omitted from the resulting object.
   - `sign_in_frequency_period` (`string`): Set the `sign_in_frequency_period` field on the resulting object. When `null`, the `sign_in_frequency_period` field will be omitted from the resulting object.

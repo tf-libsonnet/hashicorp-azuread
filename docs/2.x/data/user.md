@@ -15,6 +15,7 @@ This package contains functions and utilities for setting up the data source usi
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withEmployeeId()`](#fn-withemployeeid)
 * [`fn withMail()`](#fn-withmail)
 * [`fn withMailNickname()`](#fn-withmailnickname)
 * [`fn withObjectId()`](#fn-withobjectid)
@@ -53,6 +54,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
+  - `employee_id` (`string`): The employee identifier assigned to the user by the organisation When `null`, the `employee_id` field will be omitted from the resulting object.
   - `mail` (`string`): The SMTP address for the user When `null`, the `mail` field will be omitted from the resulting object.
   - `mail_nickname` (`string`): The email alias of the user When `null`, the `mail_nickname` field will be omitted from the resulting object.
   - `object_id` (`string`): The object ID of the user When `null`, the `object_id` field will be omitted from the resulting object.
@@ -81,6 +83,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
+  - `employee_id` (`string`): The employee identifier assigned to the user by the organisation When `null`, the `employee_id` field will be omitted from the resulting object.
   - `mail` (`string`): The SMTP address for the user When `null`, the `mail` field will be omitted from the resulting object.
   - `mail_nickname` (`string`): The email alias of the user When `null`, the `mail_nickname` field will be omitted from the resulting object.
   - `object_id` (`string`): The object ID of the user When `null`, the `object_id` field will be omitted from the resulting object.
@@ -89,6 +92,22 @@ injecting into a complete block.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `user` data source into the root Terraform configuration.
+
+
+### fn withEmployeeId
+
+```ts
+withEmployeeId()
+```
+
+`azuread.string.withEmployeeId` constructs a mixin object that can be merged into the `string`
+Terraform data source block to set or update the employee_id field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `employee_id` field.
 
 
 ### fn withMail

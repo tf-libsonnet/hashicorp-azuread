@@ -15,6 +15,16 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         included_user_actions: included_user_actions,
       }),
     },
+    client_applications:: {
+      '#new':: d.fn(help='\n`azuread.conditional_access_policy.conditions.client_applications.new` constructs a new object with attributes and blocks configured for the `client_applications`\nTerraform sub block.\n\n\n\n**Args**:\n  - `excluded_service_principals` (`list`): Set the `excluded_service_principals` field on the resulting object. When `null`, the `excluded_service_principals` field will be omitted from the resulting object.\n  - `included_service_principals` (`list`): Set the `included_service_principals` field on the resulting object. When `null`, the `included_service_principals` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `client_applications` sub block.\n', args=[]),
+      new(
+        excluded_service_principals=null,
+        included_service_principals=null
+      ):: std.prune(a={
+        excluded_service_principals: excluded_service_principals,
+        included_service_principals: included_service_principals,
+      }),
+    },
     devices:: {
       filter:: {
         '#new':: d.fn(help='\n`azuread.conditional_access_policy.conditions.devices.filter.new` constructs a new object with attributes and blocks configured for the `filter`\nTerraform sub block.\n\n\n\n**Args**:\n  - `mode` (`string`): Set the `mode` field on the resulting object.\n  - `rule` (`string`): Set the `rule` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `filter` sub block.\n', args=[]),
@@ -43,10 +53,11 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         included_locations: included_locations,
       }),
     },
-    '#new':: d.fn(help='\n`azuread.conditional_access_policy.conditions.new` constructs a new object with attributes and blocks configured for the `conditions`\nTerraform sub block.\n\n\n\n**Args**:\n  - `client_app_types` (`list`): Set the `client_app_types` field on the resulting object.\n  - `sign_in_risk_levels` (`list`): Set the `sign_in_risk_levels` field on the resulting object. When `null`, the `sign_in_risk_levels` field will be omitted from the resulting object.\n  - `user_risk_levels` (`list`): Set the `user_risk_levels` field on the resulting object. When `null`, the `user_risk_levels` field will be omitted from the resulting object.\n  - `applications` (`list[obj]`): Set the `applications` field on the resulting object. When `null`, the `applications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.applications.new](#fn-conditionsapplicationsnew) constructor.\n  - `devices` (`list[obj]`): Set the `devices` field on the resulting object. When `null`, the `devices` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.devices.new](#fn-conditionsdevicesnew) constructor.\n  - `locations` (`list[obj]`): Set the `locations` field on the resulting object. When `null`, the `locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.locations.new](#fn-conditionslocationsnew) constructor.\n  - `platforms` (`list[obj]`): Set the `platforms` field on the resulting object. When `null`, the `platforms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.platforms.new](#fn-conditionsplatformsnew) constructor.\n  - `users` (`list[obj]`): Set the `users` field on the resulting object. When `null`, the `users` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.new](#fn-conditionsusersnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `conditions` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`azuread.conditional_access_policy.conditions.new` constructs a new object with attributes and blocks configured for the `conditions`\nTerraform sub block.\n\n\n\n**Args**:\n  - `client_app_types` (`list`): Set the `client_app_types` field on the resulting object.\n  - `sign_in_risk_levels` (`list`): Set the `sign_in_risk_levels` field on the resulting object. When `null`, the `sign_in_risk_levels` field will be omitted from the resulting object.\n  - `user_risk_levels` (`list`): Set the `user_risk_levels` field on the resulting object. When `null`, the `user_risk_levels` field will be omitted from the resulting object.\n  - `applications` (`list[obj]`): Set the `applications` field on the resulting object. When `null`, the `applications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.applications.new](#fn-conditionsapplicationsnew) constructor.\n  - `client_applications` (`list[obj]`): Set the `client_applications` field on the resulting object. When `null`, the `client_applications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.client_applications.new](#fn-conditionsclient_applicationsnew) constructor.\n  - `devices` (`list[obj]`): Set the `devices` field on the resulting object. When `null`, the `devices` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.devices.new](#fn-conditionsdevicesnew) constructor.\n  - `locations` (`list[obj]`): Set the `locations` field on the resulting object. When `null`, the `locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.locations.new](#fn-conditionslocationsnew) constructor.\n  - `platforms` (`list[obj]`): Set the `platforms` field on the resulting object. When `null`, the `platforms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.platforms.new](#fn-conditionsplatformsnew) constructor.\n  - `users` (`list[obj]`): Set the `users` field on the resulting object. When `null`, the `users` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.new](#fn-conditionsusersnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `conditions` sub block.\n', args=[]),
     new(
       client_app_types,
       applications=null,
+      client_applications=null,
       devices=null,
       locations=null,
       platforms=null,
@@ -56,6 +67,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     ):: std.prune(a={
       applications: applications,
       client_app_types: client_app_types,
+      client_applications: client_applications,
       devices: devices,
       locations: locations,
       platforms: platforms,
@@ -146,16 +158,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     timeouts: timeouts,
   }),
   session_controls:: {
-    '#new':: d.fn(help='\n`azuread.conditional_access_policy.session_controls.new` constructs a new object with attributes and blocks configured for the `session_controls`\nTerraform sub block.\n\n\n\n**Args**:\n  - `application_enforced_restrictions_enabled` (`bool`): Set the `application_enforced_restrictions_enabled` field on the resulting object. When `null`, the `application_enforced_restrictions_enabled` field will be omitted from the resulting object.\n  - `cloud_app_security_policy` (`string`): Set the `cloud_app_security_policy` field on the resulting object. When `null`, the `cloud_app_security_policy` field will be omitted from the resulting object.\n  - `persistent_browser_mode` (`string`): Set the `persistent_browser_mode` field on the resulting object. When `null`, the `persistent_browser_mode` field will be omitted from the resulting object.\n  - `sign_in_frequency` (`number`): Set the `sign_in_frequency` field on the resulting object. When `null`, the `sign_in_frequency` field will be omitted from the resulting object.\n  - `sign_in_frequency_period` (`string`): Set the `sign_in_frequency_period` field on the resulting object. When `null`, the `sign_in_frequency_period` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `session_controls` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`azuread.conditional_access_policy.session_controls.new` constructs a new object with attributes and blocks configured for the `session_controls`\nTerraform sub block.\n\n\n\n**Args**:\n  - `application_enforced_restrictions_enabled` (`bool`): Set the `application_enforced_restrictions_enabled` field on the resulting object. When `null`, the `application_enforced_restrictions_enabled` field will be omitted from the resulting object.\n  - `cloud_app_security_policy` (`string`): Set the `cloud_app_security_policy` field on the resulting object. When `null`, the `cloud_app_security_policy` field will be omitted from the resulting object.\n  - `disable_resilience_defaults` (`bool`): Set the `disable_resilience_defaults` field on the resulting object. When `null`, the `disable_resilience_defaults` field will be omitted from the resulting object.\n  - `persistent_browser_mode` (`string`): Set the `persistent_browser_mode` field on the resulting object. When `null`, the `persistent_browser_mode` field will be omitted from the resulting object.\n  - `sign_in_frequency` (`number`): Set the `sign_in_frequency` field on the resulting object. When `null`, the `sign_in_frequency` field will be omitted from the resulting object.\n  - `sign_in_frequency_period` (`string`): Set the `sign_in_frequency_period` field on the resulting object. When `null`, the `sign_in_frequency_period` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `session_controls` sub block.\n', args=[]),
     new(
       application_enforced_restrictions_enabled=null,
       cloud_app_security_policy=null,
+      disable_resilience_defaults=null,
       persistent_browser_mode=null,
       sign_in_frequency=null,
       sign_in_frequency_period=null
     ):: std.prune(a={
       application_enforced_restrictions_enabled: application_enforced_restrictions_enabled,
       cloud_app_security_policy: cloud_app_security_policy,
+      disable_resilience_defaults: disable_resilience_defaults,
       persistent_browser_mode: persistent_browser_mode,
       sign_in_frequency: sign_in_frequency,
       sign_in_frequency_period: sign_in_frequency_period,
