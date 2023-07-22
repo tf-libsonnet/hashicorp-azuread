@@ -15,6 +15,7 @@ This package contains functions and utilities for setting up the data source usi
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withEmployeeIds()`](#fn-withemployeeids)
 * [`fn withIgnoreMissing()`](#fn-withignoremissing)
 * [`fn withMailNicknames()`](#fn-withmailnicknames)
 * [`fn withObjectIds()`](#fn-withobjectids)
@@ -54,6 +55,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
+  - `employee_ids` (`list`): The employee identifier assigned to the user by the organisation When `null`, the `employee_ids` field will be omitted from the resulting object.
   - `ignore_missing` (`bool`): Ignore missing users and return users that were found. The data source will still fail if no users are found When `null`, the `ignore_missing` field will be omitted from the resulting object.
   - `mail_nicknames` (`list`): The email aliases of the users When `null`, the `mail_nicknames` field will be omitted from the resulting object.
   - `object_ids` (`list`): The object IDs of the users When `null`, the `object_ids` field will be omitted from the resulting object.
@@ -83,6 +85,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
+  - `employee_ids` (`list`): The employee identifier assigned to the user by the organisation When `null`, the `employee_ids` field will be omitted from the resulting object.
   - `ignore_missing` (`bool`): Ignore missing users and return users that were found. The data source will still fail if no users are found When `null`, the `ignore_missing` field will be omitted from the resulting object.
   - `mail_nicknames` (`list`): The email aliases of the users When `null`, the `mail_nicknames` field will be omitted from the resulting object.
   - `object_ids` (`list`): The object IDs of the users When `null`, the `object_ids` field will be omitted from the resulting object.
@@ -92,6 +95,22 @@ injecting into a complete block.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `users` data source into the root Terraform configuration.
+
+
+### fn withEmployeeIds
+
+```ts
+withEmployeeIds()
+```
+
+`azuread.list.withEmployeeIds` constructs a mixin object that can be merged into the `list`
+Terraform data source block to set or update the employee_ids field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `employee_ids` field.
 
 
 ### fn withIgnoreMissing
