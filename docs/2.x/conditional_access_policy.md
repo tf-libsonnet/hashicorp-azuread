@@ -314,6 +314,7 @@ Terraform sub block.
 
 **Args**:
   - `client_app_types` (`list`): Set the `client_app_types` field on the resulting object.
+  - `service_principal_risk_levels` (`list`): Set the `service_principal_risk_levels` field on the resulting object. When `null`, the `service_principal_risk_levels` field will be omitted from the resulting object.
   - `sign_in_risk_levels` (`list`): Set the `sign_in_risk_levels` field on the resulting object. When `null`, the `sign_in_risk_levels` field will be omitted from the resulting object.
   - `user_risk_levels` (`list`): Set the `user_risk_levels` field on the resulting object. When `null`, the `user_risk_levels` field will be omitted from the resulting object.
   - `applications` (`list[obj]`): Set the `applications` field on the resulting object. When `null`, the `applications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.applications.new](#fn-conditionsapplicationsnew) constructor.
