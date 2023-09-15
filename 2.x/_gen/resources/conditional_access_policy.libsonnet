@@ -107,10 +107,10 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     },
   },
   grant_controls:: {
-    '#new':: d.fn(help='\n`azuread.conditional_access_policy.grant_controls.new` constructs a new object with attributes and blocks configured for the `grant_controls`\nTerraform sub block.\n\n\n\n**Args**:\n  - `built_in_controls` (`list`): Set the `built_in_controls` field on the resulting object.\n  - `custom_authentication_factors` (`list`): Set the `custom_authentication_factors` field on the resulting object. When `null`, the `custom_authentication_factors` field will be omitted from the resulting object.\n  - `operator` (`string`): Set the `operator` field on the resulting object.\n  - `terms_of_use` (`list`): Set the `terms_of_use` field on the resulting object. When `null`, the `terms_of_use` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `grant_controls` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`azuread.conditional_access_policy.grant_controls.new` constructs a new object with attributes and blocks configured for the `grant_controls`\nTerraform sub block.\n\n\n\n**Args**:\n  - `built_in_controls` (`list`): Set the `built_in_controls` field on the resulting object. When `null`, the `built_in_controls` field will be omitted from the resulting object.\n  - `custom_authentication_factors` (`list`): Set the `custom_authentication_factors` field on the resulting object. When `null`, the `custom_authentication_factors` field will be omitted from the resulting object.\n  - `operator` (`string`): Set the `operator` field on the resulting object.\n  - `terms_of_use` (`list`): Set the `terms_of_use` field on the resulting object. When `null`, the `terms_of_use` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `grant_controls` sub block.\n', args=[]),
     new(
-      built_in_controls,
       operator,
+      built_in_controls=null,
       custom_authentication_factors=null,
       terms_of_use=null
     ):: std.prune(a={

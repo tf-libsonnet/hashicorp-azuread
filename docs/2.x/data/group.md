@@ -17,6 +17,7 @@ This package contains functions and utilities for setting up the data source usi
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withDisplayName()`](#fn-withdisplayname)
 * [`fn withMailEnabled()`](#fn-withmailenabled)
+* [`fn withMailNickname()`](#fn-withmailnickname)
 * [`fn withObjectId()`](#fn-withobjectid)
 * [`fn withSecurityEnabled()`](#fn-withsecurityenabled)
 * [`fn withTimeouts()`](#fn-withtimeouts)
@@ -55,6 +56,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `dataSrcLabel` (`string`): The name label of the block.
   - `display_name` (`string`): The display name for the group When `null`, the `display_name` field will be omitted from the resulting object.
   - `mail_enabled` (`bool`): Whether the group is mail-enabled When `null`, the `mail_enabled` field will be omitted from the resulting object.
+  - `mail_nickname` (`string`): The mail alias for the group, unique in the organisation When `null`, the `mail_nickname` field will be omitted from the resulting object.
   - `object_id` (`string`): The object ID of the group When `null`, the `object_id` field will be omitted from the resulting object.
   - `security_enabled` (`bool`): Whether the group is a security group When `null`, the `security_enabled` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting data source block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.group.timeouts.new](#fn-timeoutsnew) constructor.
@@ -83,6 +85,7 @@ injecting into a complete block.
 **Args**:
   - `display_name` (`string`): The display name for the group When `null`, the `display_name` field will be omitted from the resulting object.
   - `mail_enabled` (`bool`): Whether the group is mail-enabled When `null`, the `mail_enabled` field will be omitted from the resulting object.
+  - `mail_nickname` (`string`): The mail alias for the group, unique in the organisation When `null`, the `mail_nickname` field will be omitted from the resulting object.
   - `object_id` (`string`): The object ID of the group When `null`, the `object_id` field will be omitted from the resulting object.
   - `security_enabled` (`bool`): Whether the group is a security group When `null`, the `security_enabled` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.group.timeouts.new](#fn-timeoutsnew) constructor.
@@ -121,6 +124,22 @@ Terraform data source block to set or update the mail_enabled field.
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `mail_enabled` field.
+
+
+### fn withMailNickname
+
+```ts
+withMailNickname()
+```
+
+`azuread.string.withMailNickname` constructs a mixin object that can be merged into the `string`
+Terraform data source block to set or update the mail_nickname field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `mail_nickname` field.
 
 
 ### fn withObjectId
