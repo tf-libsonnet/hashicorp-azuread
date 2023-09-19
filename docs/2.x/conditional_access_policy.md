@@ -517,7 +517,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `built_in_controls` (`list`): Set the `built_in_controls` field on the resulting object.
+  - `built_in_controls` (`list`): Set the `built_in_controls` field on the resulting object. When `null`, the `built_in_controls` field will be omitted from the resulting object.
   - `custom_authentication_factors` (`list`): Set the `custom_authentication_factors` field on the resulting object. When `null`, the `custom_authentication_factors` field will be omitted from the resulting object.
   - `operator` (`string`): Set the `operator` field on the resulting object.
   - `terms_of_use` (`list`): Set the `terms_of_use` field on the resulting object. When `null`, the `terms_of_use` field will be omitted from the resulting object.
