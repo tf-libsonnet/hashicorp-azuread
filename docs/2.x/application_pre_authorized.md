@@ -15,8 +15,10 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withApplicationId()`](#fn-withapplicationid)
 * [`fn withApplicationObjectId()`](#fn-withapplicationobjectid)
 * [`fn withAuthorizedAppId()`](#fn-withauthorizedappid)
+* [`fn withAuthorizedClientId()`](#fn-withauthorizedclientid)
 * [`fn withPermissionIds()`](#fn-withpermissionids)
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
@@ -52,8 +54,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `application_object_id` (`string`): The object ID of the application to which this pre-authorized application should be added
-  - `authorized_app_id` (`string`): The application ID of the pre-authorized application
+  - `application_id` (`string`): The resource ID of the application to which this pre-authorized application should be added When `null`, the `application_id` field will be omitted from the resulting object.
+  - `application_object_id` (`string`): The object ID of the application to which this pre-authorized application should be added When `null`, the `application_object_id` field will be omitted from the resulting object.
+  - `authorized_app_id` (`string`): The application ID of the pre-authorized application When `null`, the `authorized_app_id` field will be omitted from the resulting object.
+  - `authorized_client_id` (`string`): The client ID of the pre-authorized application When `null`, the `authorized_client_id` field will be omitted from the resulting object.
   - `permission_ids` (`list`): The IDs of the permission scopes required by the pre-authorized application
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_pre_authorized.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -79,13 +83,31 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `application_object_id` (`string`): The object ID of the application to which this pre-authorized application should be added
-  - `authorized_app_id` (`string`): The application ID of the pre-authorized application
+  - `application_id` (`string`): The resource ID of the application to which this pre-authorized application should be added When `null`, the `application_id` field will be omitted from the resulting object.
+  - `application_object_id` (`string`): The object ID of the application to which this pre-authorized application should be added When `null`, the `application_object_id` field will be omitted from the resulting object.
+  - `authorized_app_id` (`string`): The application ID of the pre-authorized application When `null`, the `authorized_app_id` field will be omitted from the resulting object.
+  - `authorized_client_id` (`string`): The client ID of the pre-authorized application When `null`, the `authorized_client_id` field will be omitted from the resulting object.
   - `permission_ids` (`list`): The IDs of the permission scopes required by the pre-authorized application
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_pre_authorized.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `application_pre_authorized` resource into the root Terraform configuration.
+
+
+### fn withApplicationId
+
+```ts
+withApplicationId()
+```
+
+`azuread.string.withApplicationId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the application_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `application_id` field.
 
 
 ### fn withApplicationObjectId
@@ -118,6 +140,22 @@ Terraform resource block to set or update the authorized_app_id field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `authorized_app_id` field.
+
+
+### fn withAuthorizedClientId
+
+```ts
+withAuthorizedClientId()
+```
+
+`azuread.string.withAuthorizedClientId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the authorized_client_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `authorized_client_id` field.
 
 
 ### fn withPermissionIds

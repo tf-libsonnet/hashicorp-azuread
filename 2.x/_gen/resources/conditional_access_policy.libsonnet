@@ -88,32 +88,78 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       }),
     },
     users:: {
-      '#new':: d.fn(help='\n`azuread.conditional_access_policy.conditions.users.new` constructs a new object with attributes and blocks configured for the `users`\nTerraform sub block.\n\n\n\n**Args**:\n  - `excluded_groups` (`list`): Set the `excluded_groups` field on the resulting object. When `null`, the `excluded_groups` field will be omitted from the resulting object.\n  - `excluded_roles` (`list`): Set the `excluded_roles` field on the resulting object. When `null`, the `excluded_roles` field will be omitted from the resulting object.\n  - `excluded_users` (`list`): Set the `excluded_users` field on the resulting object. When `null`, the `excluded_users` field will be omitted from the resulting object.\n  - `included_groups` (`list`): Set the `included_groups` field on the resulting object. When `null`, the `included_groups` field will be omitted from the resulting object.\n  - `included_roles` (`list`): Set the `included_roles` field on the resulting object. When `null`, the `included_roles` field will be omitted from the resulting object.\n  - `included_users` (`list`): Set the `included_users` field on the resulting object. When `null`, the `included_users` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `users` sub block.\n', args=[]),
+      excluded_guests_or_external_users:: {
+        external_tenants:: {
+          '#new':: d.fn(help='\n`azuread.conditional_access_policy.conditions.users.excluded_guests_or_external_users.external_tenants.new` constructs a new object with attributes and blocks configured for the `external_tenants`\nTerraform sub block.\n\n\n\n**Args**:\n  - `members` (`list`): Set the `members` field on the resulting object. When `null`, the `members` field will be omitted from the resulting object.\n  - `membership_kind` (`string`): Set the `membership_kind` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `external_tenants` sub block.\n', args=[]),
+          new(
+            membership_kind,
+            members=null
+          ):: std.prune(a={
+            members: members,
+            membership_kind: membership_kind,
+          }),
+        },
+        '#new':: d.fn(help='\n`azuread.conditional_access_policy.conditions.users.excluded_guests_or_external_users.new` constructs a new object with attributes and blocks configured for the `excluded_guests_or_external_users`\nTerraform sub block.\n\n\n\n**Args**:\n  - `guest_or_external_user_types` (`list`): Set the `guest_or_external_user_types` field on the resulting object.\n  - `external_tenants` (`list[obj]`): Set the `external_tenants` field on the resulting object. When `null`, the `external_tenants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.excluded_guests_or_external_users.external_tenants.new](#fn-conditionsconditionsusersexternal_tenantsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `excluded_guests_or_external_users` sub block.\n', args=[]),
+        new(
+          guest_or_external_user_types,
+          external_tenants=null
+        ):: std.prune(a={
+          external_tenants: external_tenants,
+          guest_or_external_user_types: guest_or_external_user_types,
+        }),
+      },
+      included_guests_or_external_users:: {
+        external_tenants:: {
+          '#new':: d.fn(help='\n`azuread.conditional_access_policy.conditions.users.included_guests_or_external_users.external_tenants.new` constructs a new object with attributes and blocks configured for the `external_tenants`\nTerraform sub block.\n\n\n\n**Args**:\n  - `members` (`list`): Set the `members` field on the resulting object. When `null`, the `members` field will be omitted from the resulting object.\n  - `membership_kind` (`string`): Set the `membership_kind` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `external_tenants` sub block.\n', args=[]),
+          new(
+            membership_kind,
+            members=null
+          ):: std.prune(a={
+            members: members,
+            membership_kind: membership_kind,
+          }),
+        },
+        '#new':: d.fn(help='\n`azuread.conditional_access_policy.conditions.users.included_guests_or_external_users.new` constructs a new object with attributes and blocks configured for the `included_guests_or_external_users`\nTerraform sub block.\n\n\n\n**Args**:\n  - `guest_or_external_user_types` (`list`): Set the `guest_or_external_user_types` field on the resulting object.\n  - `external_tenants` (`list[obj]`): Set the `external_tenants` field on the resulting object. When `null`, the `external_tenants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.included_guests_or_external_users.external_tenants.new](#fn-conditionsconditionsusersexternal_tenantsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `included_guests_or_external_users` sub block.\n', args=[]),
+        new(
+          guest_or_external_user_types,
+          external_tenants=null
+        ):: std.prune(a={
+          external_tenants: external_tenants,
+          guest_or_external_user_types: guest_or_external_user_types,
+        }),
+      },
+      '#new':: d.fn(help='\n`azuread.conditional_access_policy.conditions.users.new` constructs a new object with attributes and blocks configured for the `users`\nTerraform sub block.\n\n\n\n**Args**:\n  - `excluded_groups` (`list`): Set the `excluded_groups` field on the resulting object. When `null`, the `excluded_groups` field will be omitted from the resulting object.\n  - `excluded_roles` (`list`): Set the `excluded_roles` field on the resulting object. When `null`, the `excluded_roles` field will be omitted from the resulting object.\n  - `excluded_users` (`list`): Set the `excluded_users` field on the resulting object. When `null`, the `excluded_users` field will be omitted from the resulting object.\n  - `included_groups` (`list`): Set the `included_groups` field on the resulting object. When `null`, the `included_groups` field will be omitted from the resulting object.\n  - `included_roles` (`list`): Set the `included_roles` field on the resulting object. When `null`, the `included_roles` field will be omitted from the resulting object.\n  - `included_users` (`list`): Set the `included_users` field on the resulting object. When `null`, the `included_users` field will be omitted from the resulting object.\n  - `excluded_guests_or_external_users` (`list[obj]`): Set the `excluded_guests_or_external_users` field on the resulting object. When `null`, the `excluded_guests_or_external_users` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.excluded_guests_or_external_users.new](#fn-conditionsconditionsexcluded_guests_or_external_usersnew) constructor.\n  - `included_guests_or_external_users` (`list[obj]`): Set the `included_guests_or_external_users` field on the resulting object. When `null`, the `included_guests_or_external_users` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.included_guests_or_external_users.new](#fn-conditionsconditionsincluded_guests_or_external_usersnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `users` sub block.\n', args=[]),
       new(
         excluded_groups=null,
+        excluded_guests_or_external_users=null,
         excluded_roles=null,
         excluded_users=null,
         included_groups=null,
+        included_guests_or_external_users=null,
         included_roles=null,
         included_users=null
       ):: std.prune(a={
         excluded_groups: excluded_groups,
+        excluded_guests_or_external_users: excluded_guests_or_external_users,
         excluded_roles: excluded_roles,
         excluded_users: excluded_users,
         included_groups: included_groups,
+        included_guests_or_external_users: included_guests_or_external_users,
         included_roles: included_roles,
         included_users: included_users,
       }),
     },
   },
   grant_controls:: {
-    '#new':: d.fn(help='\n`azuread.conditional_access_policy.grant_controls.new` constructs a new object with attributes and blocks configured for the `grant_controls`\nTerraform sub block.\n\n\n\n**Args**:\n  - `built_in_controls` (`list`): Set the `built_in_controls` field on the resulting object. When `null`, the `built_in_controls` field will be omitted from the resulting object.\n  - `custom_authentication_factors` (`list`): Set the `custom_authentication_factors` field on the resulting object. When `null`, the `custom_authentication_factors` field will be omitted from the resulting object.\n  - `operator` (`string`): Set the `operator` field on the resulting object.\n  - `terms_of_use` (`list`): Set the `terms_of_use` field on the resulting object. When `null`, the `terms_of_use` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `grant_controls` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`azuread.conditional_access_policy.grant_controls.new` constructs a new object with attributes and blocks configured for the `grant_controls`\nTerraform sub block.\n\n\n\n**Args**:\n  - `authentication_strength_policy_id` (`string`): Set the `authentication_strength_policy_id` field on the resulting object. When `null`, the `authentication_strength_policy_id` field will be omitted from the resulting object.\n  - `built_in_controls` (`list`): Set the `built_in_controls` field on the resulting object. When `null`, the `built_in_controls` field will be omitted from the resulting object.\n  - `custom_authentication_factors` (`list`): Set the `custom_authentication_factors` field on the resulting object. When `null`, the `custom_authentication_factors` field will be omitted from the resulting object.\n  - `operator` (`string`): Set the `operator` field on the resulting object.\n  - `terms_of_use` (`list`): Set the `terms_of_use` field on the resulting object. When `null`, the `terms_of_use` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `grant_controls` sub block.\n', args=[]),
     new(
       operator,
+      authentication_strength_policy_id=null,
       built_in_controls=null,
       custom_authentication_factors=null,
       terms_of_use=null
     ):: std.prune(a={
+      authentication_strength_policy_id: authentication_strength_policy_id,
       built_in_controls: built_in_controls,
       custom_authentication_factors: custom_authentication_factors,
       operator: operator,
@@ -160,13 +206,15 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     timeouts: timeouts,
   }),
   session_controls:: {
-    '#new':: d.fn(help='\n`azuread.conditional_access_policy.session_controls.new` constructs a new object with attributes and blocks configured for the `session_controls`\nTerraform sub block.\n\n\n\n**Args**:\n  - `application_enforced_restrictions_enabled` (`bool`): Set the `application_enforced_restrictions_enabled` field on the resulting object. When `null`, the `application_enforced_restrictions_enabled` field will be omitted from the resulting object.\n  - `cloud_app_security_policy` (`string`): Set the `cloud_app_security_policy` field on the resulting object. When `null`, the `cloud_app_security_policy` field will be omitted from the resulting object.\n  - `disable_resilience_defaults` (`bool`): Set the `disable_resilience_defaults` field on the resulting object. When `null`, the `disable_resilience_defaults` field will be omitted from the resulting object.\n  - `persistent_browser_mode` (`string`): Set the `persistent_browser_mode` field on the resulting object. When `null`, the `persistent_browser_mode` field will be omitted from the resulting object.\n  - `sign_in_frequency` (`number`): Set the `sign_in_frequency` field on the resulting object. When `null`, the `sign_in_frequency` field will be omitted from the resulting object.\n  - `sign_in_frequency_period` (`string`): Set the `sign_in_frequency_period` field on the resulting object. When `null`, the `sign_in_frequency_period` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `session_controls` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`azuread.conditional_access_policy.session_controls.new` constructs a new object with attributes and blocks configured for the `session_controls`\nTerraform sub block.\n\n\n\n**Args**:\n  - `application_enforced_restrictions_enabled` (`bool`): Set the `application_enforced_restrictions_enabled` field on the resulting object. When `null`, the `application_enforced_restrictions_enabled` field will be omitted from the resulting object.\n  - `cloud_app_security_policy` (`string`): Set the `cloud_app_security_policy` field on the resulting object. When `null`, the `cloud_app_security_policy` field will be omitted from the resulting object.\n  - `disable_resilience_defaults` (`bool`): Set the `disable_resilience_defaults` field on the resulting object. When `null`, the `disable_resilience_defaults` field will be omitted from the resulting object.\n  - `persistent_browser_mode` (`string`): Set the `persistent_browser_mode` field on the resulting object. When `null`, the `persistent_browser_mode` field will be omitted from the resulting object.\n  - `sign_in_frequency` (`number`): Set the `sign_in_frequency` field on the resulting object. When `null`, the `sign_in_frequency` field will be omitted from the resulting object.\n  - `sign_in_frequency_authentication_type` (`string`): Set the `sign_in_frequency_authentication_type` field on the resulting object. When `null`, the `sign_in_frequency_authentication_type` field will be omitted from the resulting object.\n  - `sign_in_frequency_interval` (`string`): Set the `sign_in_frequency_interval` field on the resulting object. When `null`, the `sign_in_frequency_interval` field will be omitted from the resulting object.\n  - `sign_in_frequency_period` (`string`): Set the `sign_in_frequency_period` field on the resulting object. When `null`, the `sign_in_frequency_period` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `session_controls` sub block.\n', args=[]),
     new(
       application_enforced_restrictions_enabled=null,
       cloud_app_security_policy=null,
       disable_resilience_defaults=null,
       persistent_browser_mode=null,
       sign_in_frequency=null,
+      sign_in_frequency_authentication_type=null,
+      sign_in_frequency_interval=null,
       sign_in_frequency_period=null
     ):: std.prune(a={
       application_enforced_restrictions_enabled: application_enforced_restrictions_enabled,
@@ -174,6 +222,8 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       disable_resilience_defaults: disable_resilience_defaults,
       persistent_browser_mode: persistent_browser_mode,
       sign_in_frequency: sign_in_frequency,
+      sign_in_frequency_authentication_type: sign_in_frequency_authentication_type,
+      sign_in_frequency_interval: sign_in_frequency_interval,
       sign_in_frequency_period: sign_in_frequency_period,
     }),
   },

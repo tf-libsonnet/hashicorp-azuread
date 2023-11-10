@@ -1,10 +1,10 @@
 ---
-permalink: /directory_role/
+permalink: /application_from_template/
 ---
 
-# directory_role
+# application_from_template
 
-`directory_role` represents the `azuread_directory_role` Terraform resource.
+`application_from_template` represents the `azuread_application_from_template` Terraform resource.
 
 
 
@@ -31,29 +31,29 @@ new()
 ```
 
 
-`azuread.directory_role.new` injects a new `azuread_directory_role` Terraform `resource`
+`azuread.application_from_template.new` injects a new `azuread_application_from_template` Terraform `resource`
 block into the root module document.
 
 Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
 resource. For example, if you added a new instance to the root using:
 
     # arguments omitted for brevity
-    azuread.directory_role.new('some_id')
+    azuread.application_from_template.new('some_id')
 
-You can get the reference to the `id` field of the created `azuread.directory_role` using the reference:
+You can get the reference to the `id` field of the created `azuread.application_from_template` using the reference:
 
-    $._ref.azuread_directory_role.some_id.get('id')
+    $._ref.azuread_application_from_template.some_id.get('id')
 
-This is the same as directly entering `"${ azuread_directory_role.some_id.id }"` as the value.
+This is the same as directly entering `"${ azuread_application_from_template.some_id.id }"` as the value.
 
 NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
 or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `display_name` (`string`): The display name of the directory role When `null`, the `display_name` field will be omitted from the resulting object.
-  - `template_id` (`string`): The object ID of the template associated with the directory role When `null`, the `template_id` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.directory_role.timeouts.new](#fn-timeoutsnew) constructor.
+  - `display_name` (`string`): The display name for the application
+  - `template_id` (`string`): The UUID of the template to instantiate for this application
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_from_template.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -66,10 +66,10 @@ newAttrs()
 ```
 
 
-`azuread.directory_role.newAttrs` constructs a new object with attributes and blocks configured for the `directory_role`
+`azuread.application_from_template.newAttrs` constructs a new object with attributes and blocks configured for the `application_from_template`
 Terraform resource.
 
-Unlike [azuread.directory_role.new](#fn-new), this function will not inject the `resource`
+Unlike [azuread.application_from_template.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -77,12 +77,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `display_name` (`string`): The display name of the directory role When `null`, the `display_name` field will be omitted from the resulting object.
-  - `template_id` (`string`): The object ID of the template associated with the directory role When `null`, the `template_id` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.directory_role.timeouts.new](#fn-timeoutsnew) constructor.
+  - `display_name` (`string`): The display name for the application
+  - `template_id` (`string`): The UUID of the template to instantiate for this application
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_from_template.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
-  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `directory_role` resource into the root Terraform configuration.
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `application_from_template` resource into the root Terraform configuration.
 
 
 ### fn withDisplayName
@@ -164,7 +164,7 @@ new()
 ```
 
 
-`azuread.directory_role.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`
+`azuread.application_from_template.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`
 Terraform sub block.
 
 
@@ -173,6 +173,7 @@ Terraform sub block.
   - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
   - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
   - `read` (`string`): Set the `read` field on the resulting object. When `null`, the `read` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
