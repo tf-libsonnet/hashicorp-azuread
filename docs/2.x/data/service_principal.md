@@ -16,6 +16,7 @@ This package contains functions and utilities for setting up the data source usi
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withApplicationId()`](#fn-withapplicationid)
+* [`fn withClientId()`](#fn-withclientid)
 * [`fn withDisplayName()`](#fn-withdisplayname)
 * [`fn withObjectId()`](#fn-withobjectid)
 * [`fn withTimeouts()`](#fn-withtimeouts)
@@ -53,6 +54,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
   - `application_id` (`string`): The application ID (client ID) of the application associated with this service principal When `null`, the `application_id` field will be omitted from the resulting object.
+  - `client_id` (`string`): The client ID of the application associated with this service principal When `null`, the `client_id` field will be omitted from the resulting object.
   - `display_name` (`string`): The display name of the application associated with this service principal When `null`, the `display_name` field will be omitted from the resulting object.
   - `object_id` (`string`): The object ID of the service principal When `null`, the `object_id` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting data source block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.service_principal.timeouts.new](#fn-timeoutsnew) constructor.
@@ -80,6 +82,7 @@ injecting into a complete block.
 
 **Args**:
   - `application_id` (`string`): The application ID (client ID) of the application associated with this service principal When `null`, the `application_id` field will be omitted from the resulting object.
+  - `client_id` (`string`): The client ID of the application associated with this service principal When `null`, the `client_id` field will be omitted from the resulting object.
   - `display_name` (`string`): The display name of the application associated with this service principal When `null`, the `display_name` field will be omitted from the resulting object.
   - `object_id` (`string`): The object ID of the service principal When `null`, the `object_id` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.data.service_principal.timeouts.new](#fn-timeoutsnew) constructor.
@@ -102,6 +105,22 @@ Terraform data source block to set or update the application_id field.
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `application_id` field.
+
+
+### fn withClientId
+
+```ts
+withClientId()
+```
+
+`azuread.string.withClientId` constructs a mixin object that can be merged into the `string`
+Terraform data source block to set or update the client_id field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `client_id` field.
 
 
 ### fn withDisplayName

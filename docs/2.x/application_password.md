@@ -15,6 +15,7 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withApplicationId()`](#fn-withapplicationid)
 * [`fn withApplicationObjectId()`](#fn-withapplicationobjectid)
 * [`fn withDisplayName()`](#fn-withdisplayname)
 * [`fn withEndDate()`](#fn-withenddate)
@@ -55,7 +56,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `application_object_id` (`string`): The object ID of the application for which this password should be created
+  - `application_id` (`string`): The resource ID of the application for which this password should be created When `null`, the `application_id` field will be omitted from the resulting object.
+  - `application_object_id` (`string`): The object ID of the application for which this password should be created When `null`, the `application_object_id` field will be omitted from the resulting object.
   - `display_name` (`string`): A display name for the password When `null`, the `display_name` field will be omitted from the resulting object.
   - `end_date` (`string`): The end date until which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`) When `null`, the `end_date` field will be omitted from the resulting object.
   - `end_date_relative` (`string`): A relative duration for which the password is valid until, for example `240h` (10 days) or `2400h30m`. Changing this field forces a new resource to be created When `null`, the `end_date_relative` field will be omitted from the resulting object.
@@ -85,7 +87,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `application_object_id` (`string`): The object ID of the application for which this password should be created
+  - `application_id` (`string`): The resource ID of the application for which this password should be created When `null`, the `application_id` field will be omitted from the resulting object.
+  - `application_object_id` (`string`): The object ID of the application for which this password should be created When `null`, the `application_object_id` field will be omitted from the resulting object.
   - `display_name` (`string`): A display name for the password When `null`, the `display_name` field will be omitted from the resulting object.
   - `end_date` (`string`): The end date until which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`) When `null`, the `end_date` field will be omitted from the resulting object.
   - `end_date_relative` (`string`): A relative duration for which the password is valid until, for example `240h` (10 days) or `2400h30m`. Changing this field forces a new resource to be created When `null`, the `end_date_relative` field will be omitted from the resulting object.
@@ -95,6 +98,22 @@ injecting into a complete block.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `application_password` resource into the root Terraform configuration.
+
+
+### fn withApplicationId
+
+```ts
+withApplicationId()
+```
+
+`azuread.string.withApplicationId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the application_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `application_id` field.
 
 
 ### fn withApplicationObjectId

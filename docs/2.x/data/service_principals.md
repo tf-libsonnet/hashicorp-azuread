@@ -16,6 +16,7 @@ This package contains functions and utilities for setting up the data source usi
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withApplicationIds()`](#fn-withapplicationids)
+* [`fn withClientIds()`](#fn-withclientids)
 * [`fn withDisplayNames()`](#fn-withdisplaynames)
 * [`fn withIgnoreMissing()`](#fn-withignoremissing)
 * [`fn withObjectIds()`](#fn-withobjectids)
@@ -55,6 +56,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
   - `application_ids` (`list`): The application IDs (client IDs) of the applications associated with the service principals When `null`, the `application_ids` field will be omitted from the resulting object.
+  - `client_ids` (`list`): The client IDs of the applications associated with the service principals When `null`, the `client_ids` field will be omitted from the resulting object.
   - `display_names` (`list`): The display names of the applications associated with the service principals When `null`, the `display_names` field will be omitted from the resulting object.
   - `ignore_missing` (`bool`): Ignore missing service principals and return the service principals that were found. The data source will still fail if no service principals are found When `null`, the `ignore_missing` field will be omitted from the resulting object.
   - `object_ids` (`list`): The object IDs of the service principals When `null`, the `object_ids` field will be omitted from the resulting object.
@@ -84,6 +86,7 @@ injecting into a complete block.
 
 **Args**:
   - `application_ids` (`list`): The application IDs (client IDs) of the applications associated with the service principals When `null`, the `application_ids` field will be omitted from the resulting object.
+  - `client_ids` (`list`): The client IDs of the applications associated with the service principals When `null`, the `client_ids` field will be omitted from the resulting object.
   - `display_names` (`list`): The display names of the applications associated with the service principals When `null`, the `display_names` field will be omitted from the resulting object.
   - `ignore_missing` (`bool`): Ignore missing service principals and return the service principals that were found. The data source will still fail if no service principals are found When `null`, the `ignore_missing` field will be omitted from the resulting object.
   - `object_ids` (`list`): The object IDs of the service principals When `null`, the `object_ids` field will be omitted from the resulting object.
@@ -108,6 +111,22 @@ Terraform data source block to set or update the application_ids field.
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block to update.
   - `value` (`list`): The value to set for the `application_ids` field.
+
+
+### fn withClientIds
+
+```ts
+withClientIds()
+```
+
+`azuread.list.withClientIds` constructs a mixin object that can be merged into the `list`
+Terraform data source block to set or update the client_ids field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `client_ids` field.
 
 
 ### fn withDisplayNames

@@ -19,6 +19,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withAlternativeNames()`](#fn-withalternativenames)
 * [`fn withAppRoleAssignmentRequired()`](#fn-withapproleassignmentrequired)
 * [`fn withApplicationId()`](#fn-withapplicationid)
+* [`fn withClientId()`](#fn-withclientid)
 * [`fn withDescription()`](#fn-withdescription)
 * [`fn withFeatureTags()`](#fn-withfeaturetags)
 * [`fn withFeatureTagsMixin()`](#fn-withfeaturetagsmixin)
@@ -76,7 +77,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `account_enabled` (`bool`): Whether or not the service principal account is enabled When `null`, the `account_enabled` field will be omitted from the resulting object.
   - `alternative_names` (`list`): A list of alternative names, used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities When `null`, the `alternative_names` field will be omitted from the resulting object.
   - `app_role_assignment_required` (`bool`): Whether this service principal requires an app role assignment to a user or group before Azure AD will issue a user or access token to the application When `null`, the `app_role_assignment_required` field will be omitted from the resulting object.
-  - `application_id` (`string`): The application ID (client ID) of the application for which to create a service principal
+  - `application_id` (`string`): The application ID (client ID) of the application for which to create a service principal When `null`, the `application_id` field will be omitted from the resulting object.
+  - `client_id` (`string`): The client ID of the application for which to create a service principal When `null`, the `client_id` field will be omitted from the resulting object.
   - `description` (`string`): Description of the service principal provided for internal end-users When `null`, the `description` field will be omitted from the resulting object.
   - `login_url` (`string`): The URL where the service provider redirects the user to Azure AD to authenticate. Azure AD uses the URL to launch the application from Microsoft 365 or the Azure AD My Apps. When blank, Azure AD performs IdP-initiated sign-on for applications configured with SAML-based single sign-on When `null`, the `login_url` field will be omitted from the resulting object.
   - `notes` (`string`): Free text field to capture information about the service principal, typically used for operational purposes When `null`, the `notes` field will be omitted from the resulting object.
@@ -115,7 +117,8 @@ injecting into a complete block.
   - `account_enabled` (`bool`): Whether or not the service principal account is enabled When `null`, the `account_enabled` field will be omitted from the resulting object.
   - `alternative_names` (`list`): A list of alternative names, used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities When `null`, the `alternative_names` field will be omitted from the resulting object.
   - `app_role_assignment_required` (`bool`): Whether this service principal requires an app role assignment to a user or group before Azure AD will issue a user or access token to the application When `null`, the `app_role_assignment_required` field will be omitted from the resulting object.
-  - `application_id` (`string`): The application ID (client ID) of the application for which to create a service principal
+  - `application_id` (`string`): The application ID (client ID) of the application for which to create a service principal When `null`, the `application_id` field will be omitted from the resulting object.
+  - `client_id` (`string`): The client ID of the application for which to create a service principal When `null`, the `client_id` field will be omitted from the resulting object.
   - `description` (`string`): Description of the service principal provided for internal end-users When `null`, the `description` field will be omitted from the resulting object.
   - `login_url` (`string`): The URL where the service provider redirects the user to Azure AD to authenticate. Azure AD uses the URL to launch the application from Microsoft 365 or the Azure AD My Apps. When blank, Azure AD performs IdP-initiated sign-on for applications configured with SAML-based single sign-on When `null`, the `login_url` field will be omitted from the resulting object.
   - `notes` (`string`): Free text field to capture information about the service principal, typically used for operational purposes When `null`, the `notes` field will be omitted from the resulting object.
@@ -195,6 +198,22 @@ Terraform resource block to set or update the application_id field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `application_id` field.
+
+
+### fn withClientId
+
+```ts
+withClientId()
+```
+
+`azuread.string.withClientId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the client_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `client_id` field.
 
 
 ### fn withDescription

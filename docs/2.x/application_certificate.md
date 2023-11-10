@@ -15,6 +15,7 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withApplicationId()`](#fn-withapplicationid)
 * [`fn withApplicationObjectId()`](#fn-withapplicationobjectid)
 * [`fn withEncoding()`](#fn-withencoding)
 * [`fn withEndDate()`](#fn-withenddate)
@@ -57,14 +58,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `application_object_id` (`string`): The object ID of the application for which this certificate should be created
+  - `application_id` (`string`): The resource ID of the application for which this certificate should be created When `null`, the `application_id` field will be omitted from the resulting object.
+  - `application_object_id` (`string`): The object ID of the application for which this certificate should be created When `null`, the `application_object_id` field will be omitted from the resulting object.
   - `encoding` (`string`): Specifies the encoding used for the supplied certificate data When `null`, the `encoding` field will be omitted from the resulting object.
   - `end_date` (`string`): The end date until which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If omitted, the API will decide a suitable expiry date, which is typically around 2 years from the start date When `null`, the `end_date` field will be omitted from the resulting object.
   - `end_date_relative` (`string`): A relative duration for which the certificate is valid until, for example `240h` (10 days) or `2400h30m` When `null`, the `end_date_relative` field will be omitted from the resulting object.
   - `key_id` (`string`): A UUID used to uniquely identify this certificate. If omitted, a random UUID will be automatically generated When `null`, the `key_id` field will be omitted from the resulting object.
   - `start_date` (`string`): The start date from which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn&#39;t specified, the current date and time are use When `null`, the `start_date` field will be omitted from the resulting object.
   - `type` (`string`): The type of key/certificate When `null`, the `type` field will be omitted from the resulting object.
-  - `value` (`string`): The certificate data, which can be PEM encoded, base64 encoded DER or hexadecimal encoded DER. See also the `encoding` argumen
+  - `value` (`string`): The certificate data, which can be PEM encoded, base64 encoded DER or hexadecimal encoded DER. See also the `encoding` argument
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_certificate.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
@@ -89,18 +91,35 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `application_object_id` (`string`): The object ID of the application for which this certificate should be created
+  - `application_id` (`string`): The resource ID of the application for which this certificate should be created When `null`, the `application_id` field will be omitted from the resulting object.
+  - `application_object_id` (`string`): The object ID of the application for which this certificate should be created When `null`, the `application_object_id` field will be omitted from the resulting object.
   - `encoding` (`string`): Specifies the encoding used for the supplied certificate data When `null`, the `encoding` field will be omitted from the resulting object.
   - `end_date` (`string`): The end date until which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If omitted, the API will decide a suitable expiry date, which is typically around 2 years from the start date When `null`, the `end_date` field will be omitted from the resulting object.
   - `end_date_relative` (`string`): A relative duration for which the certificate is valid until, for example `240h` (10 days) or `2400h30m` When `null`, the `end_date_relative` field will be omitted from the resulting object.
   - `key_id` (`string`): A UUID used to uniquely identify this certificate. If omitted, a random UUID will be automatically generated When `null`, the `key_id` field will be omitted from the resulting object.
   - `start_date` (`string`): The start date from which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn&#39;t specified, the current date and time are use When `null`, the `start_date` field will be omitted from the resulting object.
   - `type` (`string`): The type of key/certificate When `null`, the `type` field will be omitted from the resulting object.
-  - `value` (`string`): The certificate data, which can be PEM encoded, base64 encoded DER or hexadecimal encoded DER. See also the `encoding` argumen
+  - `value` (`string`): The certificate data, which can be PEM encoded, base64 encoded DER or hexadecimal encoded DER. See also the `encoding` argument
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_certificate.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `application_certificate` resource into the root Terraform configuration.
+
+
+### fn withApplicationId
+
+```ts
+withApplicationId()
+```
+
+`azuread.string.withApplicationId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the application_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `application_id` field.
 
 
 ### fn withApplicationObjectId

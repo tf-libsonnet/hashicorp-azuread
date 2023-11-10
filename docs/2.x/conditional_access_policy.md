@@ -41,6 +41,14 @@ This package contains functions and utilities for setting up the resource using 
     * [`fn new()`](#fn-conditionsplatformsnew)
   * [`obj conditions.users`](#obj-conditionsusers)
     * [`fn new()`](#fn-conditionsusersnew)
+    * [`obj conditions.users.excluded_guests_or_external_users`](#obj-conditionsusersexcluded_guests_or_external_users)
+      * [`fn new()`](#fn-conditionsusersexcluded_guests_or_external_usersnew)
+      * [`obj conditions.users.excluded_guests_or_external_users.external_tenants`](#obj-conditionsusersexcluded_guests_or_external_usersexternal_tenants)
+        * [`fn new()`](#fn-conditionsusersexcluded_guests_or_external_usersexternal_tenantsnew)
+    * [`obj conditions.users.included_guests_or_external_users`](#obj-conditionsusersincluded_guests_or_external_users)
+      * [`fn new()`](#fn-conditionsusersincluded_guests_or_external_usersnew)
+      * [`obj conditions.users.included_guests_or_external_users.external_tenants`](#obj-conditionsusersincluded_guests_or_external_usersexternal_tenants)
+        * [`fn new()`](#fn-conditionsusersincluded_guests_or_external_usersexternal_tenantsnew)
 * [`obj grant_controls`](#obj-grant_controls)
   * [`fn new()`](#fn-grant_controlsnew)
 * [`obj session_controls`](#obj-session_controls)
@@ -495,9 +503,107 @@ Terraform sub block.
   - `included_groups` (`list`): Set the `included_groups` field on the resulting object. When `null`, the `included_groups` field will be omitted from the resulting object.
   - `included_roles` (`list`): Set the `included_roles` field on the resulting object. When `null`, the `included_roles` field will be omitted from the resulting object.
   - `included_users` (`list`): Set the `included_users` field on the resulting object. When `null`, the `included_users` field will be omitted from the resulting object.
+  - `excluded_guests_or_external_users` (`list[obj]`): Set the `excluded_guests_or_external_users` field on the resulting object. When `null`, the `excluded_guests_or_external_users` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.excluded_guests_or_external_users.new](#fn-conditionsconditionsexcluded_guests_or_external_usersnew) constructor.
+  - `included_guests_or_external_users` (`list[obj]`): Set the `included_guests_or_external_users` field on the resulting object. When `null`, the `included_guests_or_external_users` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.included_guests_or_external_users.new](#fn-conditionsconditionsincluded_guests_or_external_usersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `users` sub block.
+
+
+## obj conditions.users.excluded_guests_or_external_users
+
+
+
+### fn conditions.users.excluded_guests_or_external_users.new
+
+```ts
+new()
+```
+
+
+`azuread.conditional_access_policy.conditions.users.excluded_guests_or_external_users.new` constructs a new object with attributes and blocks configured for the `excluded_guests_or_external_users`
+Terraform sub block.
+
+
+
+**Args**:
+  - `guest_or_external_user_types` (`list`): Set the `guest_or_external_user_types` field on the resulting object.
+  - `external_tenants` (`list[obj]`): Set the `external_tenants` field on the resulting object. When `null`, the `external_tenants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.excluded_guests_or_external_users.external_tenants.new](#fn-conditionsconditionsusersexternal_tenantsnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `excluded_guests_or_external_users` sub block.
+
+
+## obj conditions.users.excluded_guests_or_external_users.external_tenants
+
+
+
+### fn conditions.users.excluded_guests_or_external_users.external_tenants.new
+
+```ts
+new()
+```
+
+
+`azuread.conditional_access_policy.conditions.users.excluded_guests_or_external_users.external_tenants.new` constructs a new object with attributes and blocks configured for the `external_tenants`
+Terraform sub block.
+
+
+
+**Args**:
+  - `members` (`list`): Set the `members` field on the resulting object. When `null`, the `members` field will be omitted from the resulting object.
+  - `membership_kind` (`string`): Set the `membership_kind` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `external_tenants` sub block.
+
+
+## obj conditions.users.included_guests_or_external_users
+
+
+
+### fn conditions.users.included_guests_or_external_users.new
+
+```ts
+new()
+```
+
+
+`azuread.conditional_access_policy.conditions.users.included_guests_or_external_users.new` constructs a new object with attributes and blocks configured for the `included_guests_or_external_users`
+Terraform sub block.
+
+
+
+**Args**:
+  - `guest_or_external_user_types` (`list`): Set the `guest_or_external_user_types` field on the resulting object.
+  - `external_tenants` (`list[obj]`): Set the `external_tenants` field on the resulting object. When `null`, the `external_tenants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.conditional_access_policy.conditions.users.included_guests_or_external_users.external_tenants.new](#fn-conditionsconditionsusersexternal_tenantsnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `included_guests_or_external_users` sub block.
+
+
+## obj conditions.users.included_guests_or_external_users.external_tenants
+
+
+
+### fn conditions.users.included_guests_or_external_users.external_tenants.new
+
+```ts
+new()
+```
+
+
+`azuread.conditional_access_policy.conditions.users.included_guests_or_external_users.external_tenants.new` constructs a new object with attributes and blocks configured for the `external_tenants`
+Terraform sub block.
+
+
+
+**Args**:
+  - `members` (`list`): Set the `members` field on the resulting object. When `null`, the `members` field will be omitted from the resulting object.
+  - `membership_kind` (`string`): Set the `membership_kind` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `external_tenants` sub block.
 
 
 ## obj grant_controls
@@ -517,6 +623,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `authentication_strength_policy_id` (`string`): Set the `authentication_strength_policy_id` field on the resulting object. When `null`, the `authentication_strength_policy_id` field will be omitted from the resulting object.
   - `built_in_controls` (`list`): Set the `built_in_controls` field on the resulting object. When `null`, the `built_in_controls` field will be omitted from the resulting object.
   - `custom_authentication_factors` (`list`): Set the `custom_authentication_factors` field on the resulting object. When `null`, the `custom_authentication_factors` field will be omitted from the resulting object.
   - `operator` (`string`): Set the `operator` field on the resulting object.
@@ -548,6 +655,8 @@ Terraform sub block.
   - `disable_resilience_defaults` (`bool`): Set the `disable_resilience_defaults` field on the resulting object. When `null`, the `disable_resilience_defaults` field will be omitted from the resulting object.
   - `persistent_browser_mode` (`string`): Set the `persistent_browser_mode` field on the resulting object. When `null`, the `persistent_browser_mode` field will be omitted from the resulting object.
   - `sign_in_frequency` (`number`): Set the `sign_in_frequency` field on the resulting object. When `null`, the `sign_in_frequency` field will be omitted from the resulting object.
+  - `sign_in_frequency_authentication_type` (`string`): Set the `sign_in_frequency_authentication_type` field on the resulting object. When `null`, the `sign_in_frequency_authentication_type` field will be omitted from the resulting object.
+  - `sign_in_frequency_interval` (`string`): Set the `sign_in_frequency_interval` field on the resulting object. When `null`, the `sign_in_frequency_interval` field will be omitted from the resulting object.
   - `sign_in_frequency_period` (`string`): Set the `sign_in_frequency_period` field on the resulting object. When `null`, the `sign_in_frequency_period` field will be omitted from the resulting object.
 
 **Returns**:

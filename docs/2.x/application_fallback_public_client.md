@@ -1,10 +1,10 @@
 ---
-permalink: /directory_role/
+permalink: /application_fallback_public_client/
 ---
 
-# directory_role
+# application_fallback_public_client
 
-`directory_role` represents the `azuread_directory_role` Terraform resource.
+`application_fallback_public_client` represents the `azuread_application_fallback_public_client` Terraform resource.
 
 
 
@@ -15,8 +15,8 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
-* [`fn withDisplayName()`](#fn-withdisplayname)
-* [`fn withTemplateId()`](#fn-withtemplateid)
+* [`fn withApplicationId()`](#fn-withapplicationid)
+* [`fn withEnabled()`](#fn-withenabled)
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`obj timeouts`](#obj-timeouts)
@@ -31,29 +31,29 @@ new()
 ```
 
 
-`azuread.directory_role.new` injects a new `azuread_directory_role` Terraform `resource`
+`azuread.application_fallback_public_client.new` injects a new `azuread_application_fallback_public_client` Terraform `resource`
 block into the root module document.
 
 Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
 resource. For example, if you added a new instance to the root using:
 
     # arguments omitted for brevity
-    azuread.directory_role.new('some_id')
+    azuread.application_fallback_public_client.new('some_id')
 
-You can get the reference to the `id` field of the created `azuread.directory_role` using the reference:
+You can get the reference to the `id` field of the created `azuread.application_fallback_public_client` using the reference:
 
-    $._ref.azuread_directory_role.some_id.get('id')
+    $._ref.azuread_application_fallback_public_client.some_id.get('id')
 
-This is the same as directly entering `"${ azuread_directory_role.some_id.id }"` as the value.
+This is the same as directly entering `"${ azuread_application_fallback_public_client.some_id.id }"` as the value.
 
 NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
 or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `display_name` (`string`): The display name of the directory role When `null`, the `display_name` field will be omitted from the resulting object.
-  - `template_id` (`string`): The object ID of the template associated with the directory role When `null`, the `template_id` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.directory_role.timeouts.new](#fn-timeoutsnew) constructor.
+  - `application_id` (`string`): The resource ID of the application to which the fallback public client setting should be applied
+  - `enabled` (`bool`): Specifies explicitly whether the application is a public client. Appropriate for apps using token grant flows that don&#39;t use a redirect URI When `null`, the `enabled` field will be omitted from the resulting object.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_fallback_public_client.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -66,10 +66,10 @@ newAttrs()
 ```
 
 
-`azuread.directory_role.newAttrs` constructs a new object with attributes and blocks configured for the `directory_role`
+`azuread.application_fallback_public_client.newAttrs` constructs a new object with attributes and blocks configured for the `application_fallback_public_client`
 Terraform resource.
 
-Unlike [azuread.directory_role.new](#fn-new), this function will not inject the `resource`
+Unlike [azuread.application_fallback_public_client.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -77,44 +77,44 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `display_name` (`string`): The display name of the directory role When `null`, the `display_name` field will be omitted from the resulting object.
-  - `template_id` (`string`): The object ID of the template associated with the directory role When `null`, the `template_id` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.directory_role.timeouts.new](#fn-timeoutsnew) constructor.
+  - `application_id` (`string`): The resource ID of the application to which the fallback public client setting should be applied
+  - `enabled` (`bool`): Specifies explicitly whether the application is a public client. Appropriate for apps using token grant flows that don&#39;t use a redirect URI When `null`, the `enabled` field will be omitted from the resulting object.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [azuread.application_fallback_public_client.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
-  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `directory_role` resource into the root Terraform configuration.
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `application_fallback_public_client` resource into the root Terraform configuration.
 
 
-### fn withDisplayName
+### fn withApplicationId
 
 ```ts
-withDisplayName()
+withApplicationId()
 ```
 
-`azuread.string.withDisplayName` constructs a mixin object that can be merged into the `string`
-Terraform resource block to set or update the display_name field.
+`azuread.string.withApplicationId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the application_id field.
 
 
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `display_name` field.
+  - `value` (`string`): The value to set for the `application_id` field.
 
 
-### fn withTemplateId
+### fn withEnabled
 
 ```ts
-withTemplateId()
+withEnabled()
 ```
 
-`azuread.string.withTemplateId` constructs a mixin object that can be merged into the `string`
-Terraform resource block to set or update the template_id field.
+`azuread.bool.withEnabled` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the enabled field.
 
 
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `template_id` field.
+  - `value` (`bool`): The value to set for the `enabled` field.
 
 
 ### fn withTimeouts
@@ -164,7 +164,7 @@ new()
 ```
 
 
-`azuread.directory_role.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`
+`azuread.application_fallback_public_client.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`
 Terraform sub block.
 
 
